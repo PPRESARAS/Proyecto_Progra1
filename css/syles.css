@@ -1,3 +1,4 @@
 .headerul{
-  background-color: #444444
+  background-color: red;
+  display: flex;
 }
