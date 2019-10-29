@@ -1,4 +1,19 @@
+body{
+  background-color: #081C24;
+}
+
 .headerul{
-  background-color: red;
-  display: flex; 
+  background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+.cabezera {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  width: 100%;
 }
