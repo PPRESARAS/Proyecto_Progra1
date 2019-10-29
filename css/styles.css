@@ -1,9 +1,9 @@
 body{
   background-color: #081C24;
 }
-
+/*cabezera*/
 .headerul{
-<<<<<<< HEAD
+
   background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );
   display: flex;
   width: 100%;
@@ -17,9 +17,33 @@ body{
 }
 .container {
   width: 100%;
-=======
-  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.Piedepagina{
   display: flex;
-  justify-content: center;
->>>>>>> 755390d81597fc165ac98643febd608d57ef4916
+
+}
+
+.grupo {
+display: flex;
+flex-wrap: wrap;
 }
