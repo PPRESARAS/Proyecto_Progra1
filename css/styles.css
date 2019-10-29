@@ -1,4 +1,5 @@
 .headerul{
   background-color: red;
-  display: flex; 
+  display: flex;
+  justify-content: center;
 }
