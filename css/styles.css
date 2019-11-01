@@ -114,6 +114,10 @@ font-size: 10px;
   position: relative;
 }
 .logoTmdb img{
-  width: 80px;
-height: 65px;
+  width: 90px;
+  height: 70px;
+  position: relative;
+  top: 23px;
+  left: 20px;
+
 }
