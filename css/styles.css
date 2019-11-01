@@ -1,5 +1,6 @@
 body{
-  background-color: #081C24;
+  /*background-color: #081C24;*/
+  background-image: url(../imagenes/fondo3.jpg);
 }
 /*cabezera*/
 .headerul{
