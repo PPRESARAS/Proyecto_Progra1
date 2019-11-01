@@ -3,6 +3,13 @@ body{
   background-image: url(../imagenes/fondo3.jpg);
 }
 /*cabezera*/
+
+.cabecera {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
 .headerul{
   background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );
   display: flex;
@@ -11,12 +18,7 @@ body{
   margin: 0px;
   position: relative;
 }
-.cabecera {
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-  position: relative;
-}
+
 .logo{
   width: 170px;
   height: 170px;
@@ -24,17 +26,16 @@ body{
   position: absolute;
 }
 
+.form-groupSearch{
+  position: absolute;
+  width: 110%;
+}
+
 .buscadorheader{
   position: absolute;
   left: 26%;
   top: 70px;
   width: 40%;
-
-}
-.form-groupSearch{
-  position: absolute;
-  width: 110%;
-
 }
 
 .form-control{
