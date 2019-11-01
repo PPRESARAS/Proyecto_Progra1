@@ -3,10 +3,6 @@ body{
 }
 /*cabezera*/
 .headerul{
-<<<<<<< HEAD
-=======
-
->>>>>>> 4f6430ede57c647efef3d862c3619ffc4003efb2
   background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );
   display: flex;
   width: 100%;
@@ -20,8 +16,6 @@ body{
 }
 .container {
   width: 100%;
-<<<<<<< HEAD
-=======
 }
 .paginas {
 font-style: italic;
@@ -55,5 +49,4 @@ color: red;
 .grupo {
 color: white;
 
->>>>>>> 4f6430ede57c647efef3d862c3619ffc4003efb2
 }
