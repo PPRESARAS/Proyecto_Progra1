@@ -32,6 +32,17 @@ text-decoration: none;
 
 
 
+.series {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.series p {
+color: white;
+}
+
+
 
 
 
@@ -51,10 +62,11 @@ text-decoration: none;
 /*footer*/
 .Piedepagina{
   display: flex;
+  flex-direction: row;
 
 }
 
 .grupo {
 color: white;
-
+font-size: 10px;
 }
