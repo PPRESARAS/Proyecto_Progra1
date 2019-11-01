@@ -9,17 +9,24 @@ body{
   height: 100%;
   margin: 0px;
 }
-.cabezera {
+.cabecera {
   width: 100%;
   padding: 0px;
   margin: 0px;
 }
 .container {
   width: 100%;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8bb0bbc5e10df38531bbf855e077fe538b127acd
 }
-.paginas {
+.paginas a {
 font-style: italic;
 color: red;
+text-align: center;
+text-decoration: none;
+
 }
 
 
