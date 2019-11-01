@@ -1,5 +1,6 @@
 body{
-  background-color: #081C24;
+  /*background-color: #081C24;*/
+  background-image: url(../imagenes/fondo3.jpg);
 }
 /*cabezera*/
 .headerul{
@@ -104,4 +105,14 @@ color: white;
 .grupo {
 color: white;
 font-size: 10px;
+
+}
+.logoTmdb{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.logoTmdb img{
+  width: 80px;
+height: 65px;
 }
