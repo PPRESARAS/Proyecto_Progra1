@@ -65,6 +65,7 @@ body{
 
 div .serieZoom li:hover{
   width: 28%;
+  transition: width 0.4s linear;
 }
 section .series{
   height: 100px;
