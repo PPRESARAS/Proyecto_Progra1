@@ -40,3 +40,38 @@ fetch("https://api.themoviedb.org/3/tv/top_rated?api_key=8eaabce657eccc6be932f97
 
 
   });
+
+
+
+
+  fetch('https://api.themoviedb.org/3/tv/top_rated?api_key=8eaabce657eccc6be932f97172c1a728&language=en-US&page=1')
+  .then(function(response) {
+    return response.json();
+  })
+
+  .then(function(myJson) {
+    var posterURL = 'https://image.tmdb.org/t/p/original'
+    console.log(myJson);
+    for (var i = 0; i < myJson.results.length; i++) {
+      myJson.results[i]
+      console.log(myJson.results[i].name);
+      console.log(  posterURL+myJson.results[i].poster_path)
+      var elementoHTML = document.querySelector('.mejorPuntuadas')
+
+      var contenidoParaInsertar = '<li>'
+      contenidoParaInsertar += '<img src="'+posterURL+ myJson.results[i].poster_path+'" alt="">'
+      contenidoParaInsertar += '<div class="uk-position-center uk-panel"><h1>'+myJson.results[i].name +'</h1></div>'
+      contenidoParaInsertar += '</li>'
+
+      elementoHTML.innerHTML += contenidoParaInsertar
+
+
+
+    }
+
+
+
+
+
+
+  });
