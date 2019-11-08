@@ -13,9 +13,15 @@ fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=8eaabce657eccc6be932f9
 
       var elementoHTML = document.querySelector('.listadoDeSeries')
       var insertar = '<li>'
-      insertar += '<a href="genero.html" id="generos">'+myJson.genres[i].name+'</a>' //quiero que con cada genero me tire una foto que lo represente
+      insertar += '<a href="genero.html?id='+myJson.genres[i].id+'" class="generos">'+myJson.genres[i].name+'</a>' //quiero que con cada genero me tire una foto que lo represente
       insertar += '</li>'
 
       elementoHTML.innerHTML += insertar
+
+
    }
+
+
+
+
   })
