@@ -8,8 +8,34 @@
 <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+<link rel="stylesheet" href="../css/busqueda.css">
   </head>
+
   <body>
+
+
+        <div class="container">
+
+          <header class="cabecera">
+            <ul class="headerul">
+              <img  src="../imagenes/Capture.JPG" alt="logotipo" class="logo">
+              <form class="buscadorheader" action="buscar.html" method="get">
+                <div class="form-groupSearch">
+                  <input type="search" class="form-control" name="search" placeholder="  Buscar">
+                  <i id="icono" class="fas fa-search"></i>
+                          </div>
+              </form>
+                  <a href="index.html" id="generos">Principal</a>
+
+            </ul>
+
+            </header>
+
+          <div class="">
+              <ul class="listadoDeSeries">
+
+              </ul>
+          </div>
 
   <main>
     <form class="formulario" action="index.html" method="get">
@@ -19,11 +45,42 @@
         <option value="f"></option>
         <option value="s"></option>
         <option value="g"></option>
-
+        <option value="f"></option>
+        <option value="s"></option>
+        <option value="g"></option>
+      </select>
+      <br>
+      <label for="generoAExcluir">Generos que desea excluir...</label>
+      <br>
+      <select class="" name="">
+        <option value="f"></option>
+        <option value="s"></option>
+        <option value="g"></option>
+        <option value="f"></option>
+        <option value="s"></option>
+        <option value="g"></option>
       </select>
 
     </form>
   </main>
+  <footer  class="Piedepagina">
+    <ul class="grupo">
+      <li>
+        <h2>Marcos Estrada</h2>
+      </li>
+      <li>
+        <h2>Matias Kruger</h2>
+      </li>
+      <li>
+        <h2>Pedro Presaras</h2>
+      </li>
+    </ul>
+    <div class="logoTmdb">
+      <img src="../imagenes/images.png" alt="">
+    </div>
+
+  </footer>
+</div>
 
 
   </body>
