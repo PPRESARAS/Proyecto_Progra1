@@ -1,10 +1,9 @@
 body{
   /*background-color: #081C24;*/
   background-image: url(../imagenes/fondo3.jpg);
-  height: 100%
+  height: 100%ñ
 }
-/*cabezera*/
-
+ /*header*/
 .cabecera {
   width: 100%;
   padding: 0px;
@@ -12,6 +11,7 @@ body{
   position: relative;
   display: flex;
 }
+
 .headerul{
   background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );
   display: flex;
@@ -34,7 +34,6 @@ body{
 }
 
 .buscadorheader{
-
   width: 40%;
 }
 
@@ -44,13 +43,10 @@ body{
   height: 50px;
   border-radius: 25px;
 }
+
 #icono{
   color: white;
   font-size: 30px;
-}
-
-#generos{
-
 }
 
 .container {
@@ -58,77 +54,30 @@ body{
 }
 /*hasta aca header*/
 
-.paginas a {
-font-style: italic;
-color: red;
-text-align: center;
-text-decoration: none;
-
-}
-
-
-
-.series {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.series p {
-color: white;
-}
-
-
-.popular {
-justify-content: space-between;
-flex-direction: row;
-
-}
-
-.alAire {display: ;
-justify-content: space-between;
-flex-direction: row;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*footer*/
 .Piedepagina{
   display: flex;
   flex-direction: row;
-
 }
 
 .grupo {
 color: white;
 font-size: 10px;
-
 }
+
 .logoTmdb{
   display: flex;
   flex-wrap: wrap;
   position: relative;
 }
+
 .logoTmdb img{
-  
+  width: 90px;
   height: 70px;
   position: relative;
   top: 23px;
   left: 20px;
-
 }
+
+/*Hasta aca footer*/
