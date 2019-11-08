@@ -20,7 +20,7 @@ fetch("https://api.themoviedb.org/3/tv/top_rated?api_key=8eaabce657eccc6be932f97
 
       var contenidoParaInsertar = '<li>'
       contenidoParaInsertar += '<img src="'+posterURL+ myJson.results[i].poster_path+'" alt="">'
-      contenidoParaInsertar += '<div class="uk-position-center uk-panel"><h1>'+myJson.results[i].name +'</h1></div>'
+      contenidoParaInsertar += '<div class="uk-position-center uk-panel"><a href="detalles.html?id='+ myJson.results[i].id+'">'+myJson.results[i].name +'</a></div>'
       contenidoParaInsertar += '</li>'
 
       elementoHTML.innerHTML += contenidoParaInsertar
@@ -56,7 +56,7 @@ fetch("https://api.themoviedb.org/3/tv/top_rated?api_key=8eaabce657eccc6be932f97
       var elementoHTML = document.querySelector('.populares')
       var insertar = '<li>'
       insertar += '<img src="'+posterURL+ myJson.results[i].poster_path+'" alt=""</a>' //quiero que con cada genero me tire una foto que lo represente
-      insertar += '<div class="uk-position-center uk-panel"><h1>'+myJson.results[i].name +'</h1></div>'
+      insertar += '<div class="uk-position-center uk-panel"><a href="detalles.html?id='+ myJson.results[i].id+'">'+myJson.results[i].name +'</a></div>'
       insertar += '</li>'
 
       elementoHTML.innerHTML += insertar
@@ -82,7 +82,7 @@ fetch("https://api.themoviedb.org/3/tv/top_rated?api_key=8eaabce657eccc6be932f97
         var elementoHTML = document.querySelector('.aire')
         var insertar2 = '<li>'
         insertar2 += '<img src="'+posterURL+ myJson.results[i].poster_path+'" alt=""</a>'
-        insertar2 += '<div class="uk-position-center uk-panel"><h1>'+myJson.results[i].name +'</h1></div>'
+        insertar2 += '<div class="uk-position-center uk-panel"><a href="detalles.html?id='+ myJson.results[i].id+'">'+myJson.results[i].name +'</a></div>'
         insertar2 += '</li>'
 
         elementoHTML.innerHTML += insertar2
