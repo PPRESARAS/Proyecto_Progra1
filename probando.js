@@ -16,7 +16,7 @@ fetch("https://api.themoviedb.org/3/tv/top_rated?api_key=8eaabce657eccc6be932f97
       myJson.results[i]
       console.log(  myJson.results[i].name  )
       console.log(  posterURL+myJson.results[i].poster_path)
-      var elementoHTML = document.querySelector('.populares')
+      var elementoHTML = document.querySelector('.puntaje')
 
       var contenidoParaInsertar = '<li>'
       contenidoParaInsertar += '<img src="'+posterURL+ myJson.results[i].poster_path+'" alt="">'
@@ -53,7 +53,7 @@ fetch("https://api.themoviedb.org/3/tv/top_rated?api_key=8eaabce657eccc6be932f97
       console.log(  myJson.results[i].name )
       console.log(posterURL+myJson.results[i].poster_path);
 
-      var elementoHTML = document.querySelector('.popular')
+      var elementoHTML = document.querySelector('.populares')
       var insertar = '<li>'
       insertar += '<img src="'+posterURL+ myJson.results[i].poster_path+'" alt=""</a>' //quiero que con cada genero me tire una foto que lo represente
       insertar += '<div class="uk-position-center uk-panel"><h1>'+myJson.results[i].name +'</h1></div>'
