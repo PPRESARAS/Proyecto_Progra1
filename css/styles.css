@@ -76,6 +76,7 @@ text-decoration: none;
 
 .series p {
 color: white;
+text-align: center;
 }
 
 
@@ -125,7 +126,7 @@ font-size: 10px;
   position: relative;
 }
 .logoTmdb img{
-  
+
   height: 70px;
   position: relative;
   top: 23px;
