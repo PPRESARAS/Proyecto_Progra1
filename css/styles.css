@@ -5,12 +5,16 @@ body{
 }
 /*cabezera*/
 
-.cabecera {
+.cabezera {
   width: 100%;
   padding: 0px;
   margin: 1px;
-  position: relative;
   display: flex;
+    background-color: white;
+    overflow: hidden;
+    z-index: 999;
+    margin-bottom: 50px;
+
 }
 .headerul{
   background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );
@@ -53,12 +57,14 @@ body{
 
 }
 
+
 .container {
   width: 100%;
+display: block;
 }
 /*hasta aca header*/
 
-.paginas a {
+.headerul a {
 font-style: italic;
 color: red;
 text-align: center;
@@ -66,10 +72,19 @@ text-decoration: none;
 
 }
 
-
+section.series div:hover {
+  background: black;
+    transition: background 0.5s linear;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    text-align: center;
+    justify-content: center;
+}
 
 .series {
-  display: flex;
+
+  position: relative;
   justify-content: space-between;
   flex-direction: column;
 }
@@ -80,12 +95,16 @@ color: white;
 
 
 .popular {
+
+  position: relative;
 justify-content: space-between;
 flex-direction: row;
 
 }
 
-.alAire {display: ;
+.alAire {
+
+  position: relative;
 justify-content: space-between;
 flex-direction: row;
 
@@ -111,6 +130,12 @@ flex-direction: row;
 .Piedepagina{
   display: flex;
   flex-direction: row;
+  border-top: 1px solid gainsboro;
+text-align: center;
+height: 200px;
+background-color: white;
+
+
 
 }
 
@@ -125,7 +150,7 @@ font-size: 10px;
   position: relative;
 }
 .logoTmdb img{
-  
+
   height: 70px;
   position: relative;
   top: 23px;

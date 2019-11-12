@@ -1,16 +1,20 @@
 body{
   /*background-color: #081C24;*/
   background-image: url(../imagenes/fondo3.jpg);
-  height: 100%ñ
+  height: 100%
 }
 /*cabezera*/
 
-.cabecera {
+.cabezera {
   width: 100%;
   padding: 0px;
   margin: 1px;
-  position: relative;
   display: flex;
+    background-color: white;
+    overflow: hidden;
+    z-index: 999;
+    margin-bottom: 50px;
+
 }
 .headerul{
   background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );
@@ -52,12 +56,17 @@ body{
 #generos{
 
 }
+.main {
+
+}
 
 .container {
   width: 100%;
+display: block;
 }
+/*hasta aca header*/
 
-.paginas a {
+.headerul a {
 font-style: italic;
 color: red;
 text-align: center;
@@ -68,7 +77,8 @@ text-decoration: none;
 
 
 .series {
-  display: flex;
+
+  position: relative;
   justify-content: space-between;
   flex-direction: column;
 }
@@ -77,7 +87,67 @@ text-decoration: none;
 color: white;
 }
 
+
+.popular {
+
+  position: relative;
+justify-content: space-between;
+flex-direction: row;
+
+}
+
+.alAire {
+
+  position: relative;
+justify-content: space-between;
+flex-direction: row;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
 .Piedepagina{
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  border-top: 1px solid gainsboro;
+text-align: center;
+height: 200px;
+background-color: white;
+
+
+
+}
+
+.grupo {
+color: white;
+font-size: 10px;
+
+}
+.logoTmdb{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.logoTmdb img{
+
+  height: 70px;
+  position: relative;
+  top: 23px;
+  left: 20px;
+
 }
