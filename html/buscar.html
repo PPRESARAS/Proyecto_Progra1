@@ -38,27 +38,27 @@
           </div>
 
   <main>
-    <form class="formulario" action="buscar.html" method="get">
+    <form class="formulario" name="formulario" action="buscar.html" method="get">
       <label for="generos">Generos que desea buscar...</label>
       <br>
       <select class="genero" name="pattern"  id="generoABuscar">
-        <option value="f"></option>
-        <option value="s"></option>
-        <option value="g"></option>
-        <option value="f"></option>
-        <option value="s"></option>
-        <option value="g"></option>
+        <option value="f">groupSearch</option>
+        <option value="s">gfsdag</option>
+        <option value="g">gfdsag</option>
+        <option value="f">jyrth</option>
+        <option value="s">etrrrr</option>
+        <option value="g">hdhhh</option>
       </select>
       <br>
       <label for="generos">Generos que desea excluir...</label>
       <br>
       <select class="genero" name="">
-        <option value="f"></option>
-        <option value="s"></option>
-        <option value="g"></option>
-        <option value="f"></option>
-        <option value="s"></option>
-        <option value="g"></option>
+        <option value="f">ffff</option>
+        <option value="s">ssss</option>
+        <option value="g">ggggg</option>
+        <option value="f">fffff</option>
+        <option value="s">sssss</option>
+        <option value="g">ggggg</option>
       </select>
       <br>
       <label for="ordenarPor">Ordenar series por...</label>
@@ -82,9 +82,10 @@
       <br>
       <input type="year" name="fecha" value=""> (hay que hacer que tome solo numeros y valores tipo del 1950 hasta ahora, año+1, )
       <br>
-      <button type="submit" name="button">Buscar</button>
+      <button type="submit" name="button" onclick="validar()">Buscar</button>
     </form>
   </main>
+
   <footer  class="Piedepagina">
     <ul class="grupo">
       <li>
@@ -106,7 +107,7 @@
 
 
   </body>
-  <script type="text/javascript" src="">
+  <script type="text/javascript" src="../js/busqueda.js">
 
   </script>
 </html>
