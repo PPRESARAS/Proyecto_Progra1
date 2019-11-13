@@ -39,7 +39,7 @@
 
   <main>
     <form class="formulario" name="formulario" action="buscar.html" method="get">
-      <label for="generos">Generos que desea buscar...</label>
+      <label for="generos">Generos que desea buscar... (*)</label>
       <br>
       <select class="genero" name="pattern"  id="generoABuscar">
         <option value="f">groupSearch</option>
@@ -50,7 +50,7 @@
         <option value="g">hdhhh</option>
       </select>
       <br>
-      <label for="generos">Generos que desea excluir...</label>
+      <label for="generos">Generos que desea excluir...(*)</label>
       <br>
       <select class="genero" name="">
         <option value="f">ffff</option>
@@ -61,7 +61,7 @@
         <option value="g">ggggg</option>
       </select>
       <br>
-      <label for="ordenarPor">Ordenar series por...</label>
+      <label for="ordenarPor">Ordenar series por...(*)</label>
       <br>
       <select class="ordenar" name="">
         <option value="f"></option>
@@ -78,9 +78,13 @@
         <option value="g"></option>
       </select>
       <br>
-      <label for="">Año de estreno</label>
+      <label for="">Año de estreno(*)</label>
       <br>
-      <input type="year" name="fecha" value=""> (hay que hacer que tome solo numeros y valores tipo del 1950 hasta ahora, año+1, )
+      <input type="year" name="fecha" value="">
+
+       <!-- (hay que hacer que tome solo numeros y valores tipo del 1950 hasta ahora, año+1, ) -->
+
+
       <br>
       <button type="submit" name="button" onclick="validar()">Buscar</button>
     </form>

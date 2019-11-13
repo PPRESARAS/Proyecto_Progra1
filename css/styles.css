@@ -72,7 +72,7 @@ text-decoration: none;
 
 }
 
-section.series div:hover {
+section.series div img:hover {
   background: black;
     transition: background 0.5s linear;
     width: 100%;
@@ -80,6 +80,7 @@ section.series div:hover {
     opacity: 0.5;
     text-align: center;
     justify-content: center;
+    
 }
 
 .series {
