@@ -82,7 +82,7 @@ fetch("https://api.themoviedb.org/3/tv/top_rated?api_key=8eaabce657eccc6be932f97
         var elementoHTML = document.querySelector('.aire')
         var insertar2 = '<li>'
         insertar2 += '<img src="'+posterURL+ myJson.results[i].poster_path+'" alt=""</a>'
-        insertar2 += '<div class="uk-position-center uk-panel"><a href="detalles.html?id='+ myJson.results[i].id+'">'+myJson.results[i].name +'</a></div>'
+        insertar2 += '<div class="uk-position-center uk-panel"> <a href="detalles.html?id='+ myJson.results[i].id+'">'+myJson.results[i].name +'</a></div>'
         insertar2 += '</li>'
 
         elementoHTML.innerHTML += insertar2

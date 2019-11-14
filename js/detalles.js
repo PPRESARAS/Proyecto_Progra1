@@ -28,7 +28,7 @@ fetch(url)
       var genero = ""
       for (var i = 0; i < myJson.genres.length; i++) {
         myJson.genres[i]
-        genero += '     <a href="genero.html" id="generos">'+myJson.genres[i].name+'</a>'
+        genero += '    <a href="genero.html" id="generos">'+myJson.genres[i].name+'</a> '
       }
       contenidoParaInsertar+= genero
       contenidoParaInsertar += '</li>'

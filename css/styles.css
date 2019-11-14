@@ -79,14 +79,12 @@ text-decoration: none;
 } */
 
 
-section.series div img:hover {
+section.series div li:hover {
   background: black;
   transition: background 0.5s linear;
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-    text-align: center;
-    justify-content: center;
+  opacity: 0.6;
+  text-align: center;
+  justify-content: center;
 }
 
 /* #slider populares {
