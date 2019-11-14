@@ -5,15 +5,16 @@ body{
 }
 /*cabezera*/
 
-.cabezera {
+.cabecera {
   width: 100%;
   padding: 0px;
   margin: 1px;
-  display: flex;
-    background-color: white;
+  display:flex;
+      background-color: white;
     overflow: hidden;
     z-index: 999;
     margin-bottom: 50px;
+    position: fixed;
 
 }
 .headerul{
@@ -93,12 +94,16 @@ section.series div img:hover {
   display: flex;
   animation: ease-in-out 2s infinite normal;
 } */
-
+.margen {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .series {
 display: flex;
   position: relative;
   justify-content: space-between;
   flex-direction: column;
+
 }
 
 .series p {

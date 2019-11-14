@@ -15,7 +15,7 @@
   <div class="container">
 
 
-    <header class="cabezera">
+    <header class="cabecera">
       <ul class="headerul">
         <a src="logotipo" href="index.html"> <img  src="../imagenes/Capture.JPG" alt="logotipo" class="logo"></a>
 
@@ -25,9 +25,25 @@
             <i id="icono" class="fas fa-search"></i>
                     </div>
         </form>
-            <a href="buscar.html">Filtros</a>
-            <a href="listado.html" id="generos">Generos</a>
-            <a href="detalles.html" id="detalles">Detalles de las Series</a>
+
+
+
+
+            <div class="uk-inline">
+                <button class="uk-button uk-button-default" type="button">Series</button>
+                <div uk-dropdown>
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-active"><a href="buscar.html">Filtros</a></li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a "uk-button uk-button-default" href="listado.html" id="generos">Generos</a>
+                        <li> <a href="detalles.html" id="detalles">Detalles de las Series</a>
+                        <li class="uk-nav-divider"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
       </ul>
 
 
@@ -36,7 +52,7 @@
 
     <section class= "series">
       <p>listado de series con mayor puntaje</p>
-      <div class="uk-position-relative uk-visible-toggle uk-light slider" tabindex="-1" uk-slider id="slider">
+      <div class="uk-position-relative uk-visible-toggle uk-light slider  margen" tabindex="-1" uk-slider id="slider">
 
       <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m puntaje">
 
@@ -46,11 +62,19 @@
       <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
 
     </div>
+<<<<<<< HEAD
   
       <div class="">
+=======
 
 
->>>>>>> master
+      <div class="">
+
+>>>>>>> d765e9383cdcf3e6c655e7ee6b0d2035dd1c8340
+
+
+
+
     <p>Listado de las series mas  populares</p>
 
       <div class="uk-position-relative uk-visible-toggle uk-light slider" tabindex="-1" uk-slider id="slider">
