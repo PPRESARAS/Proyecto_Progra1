@@ -1,58 +1,50 @@
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
 
 <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
 <script src="https://kit.fontawesome.com/0fb732c451.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/stylesgeneros.css">
+
   </head>
-
-
-    <body>
-
-
-
+  <body>
     <div class="container">
 
 
-      <header class="cabecera">
+      <header class="cabezera">
         <ul class="headerul">
           <a src="logotipo" href="index.html"> <img  src="../imagenes/Capture.JPG" alt="logotipo" class="logo"></a>
-          <form class="buscadorheader" action="buscar.html" method="get">
+
+          <form class="buscadorheader" action="searchbar.html" method="get">
             <div class="form-groupSearch">
               <input type="search" class="form-control" name="search" placeholder="  Buscar">
               <i id="icono" class="fas fa-search"></i>
-              </div>
+                      </div>
           </form>
-              <a href="index.html" id="generos">Principal</a>
-
+              <a href="buscar.html">Filtros</a>
+              <a href="listado.html" id="generos">Generos</a>
+              <a href="detalles.html" id="detalles">Detalles de las Series</a>
         </ul>
 
 
-        </header>
+    		</header>
+  <main>
 
-<section class="seriesPorGeneros">
+    <div class="container">
+      <h1>resultados</h1>
+      <div class="resultados-wrapper">
+        <ul class="resultados">
 
+        </ul>
+      </div>
+      <a href="index.html">Vovler a buscar</a>
+    </div>
 
-        <div class="tituloDelGenero">
-
-        </div>
-
-        <div class="contenedorDeSeries">
-
-
-        </div>
-
-</section>
-
-
-
-
+      </main>
 
       <footer  class="Piedepagina">
         <ul class="grupo">
@@ -67,18 +59,11 @@
           </li>
         </ul>
         <div class="logoTmdb">
-          <img src="../imagenes/images.png" alt="">
+          <img src="../imagenes/logodb.png" alt="">
         </div>
 
       </footer>
-    </div>
 
-
-    <script src="../js/genero.js">
-
-
-      </script>
-
-</body>
-
+  <script src="../js/searchbar.js"></script>
+  </body>
 </html>
