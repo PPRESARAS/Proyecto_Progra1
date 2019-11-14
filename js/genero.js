@@ -21,7 +21,7 @@ fetch(url)
 
       var contenidoParaInsertar = '<li class="serie">'
       contenidoParaInsertar += '<img class="poster" src="'+posterURL+ myJson.results[i].poster_path+'" alt="">'
-      contenidoParaInsertar += '<div class="tituloserie"><h1>'+myJson.results[i].name +'</h1></div>'
+      contenidoParaInsertar += '<div class="tituloserie"><a href="detalles.html?id='+myJson.results[i].id+'">'+myJson.results[i].name +'</a></div>'
       contenidoParaInsertar += '</li>'
 
       elementoHTML.innerHTML += contenidoParaInsertar

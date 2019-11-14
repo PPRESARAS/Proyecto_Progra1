@@ -113,10 +113,12 @@ flex-direction: row;
 
 .serie{
   width: 18%;
+  display: flex;
   position: relative;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   align-items:center;
+  margin: 10px;
 }
 
 .poste{
@@ -126,6 +128,8 @@ flex-direction: row;
 .tituloserie{
   position: absolute;
   bottom: 50%;
+  justify-content: center;
+
 }
 
 
