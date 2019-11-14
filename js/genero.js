@@ -17,12 +17,12 @@ fetch(url)
     var posterURL = 'https://image.tmdb.org/t/p/original'
     for (var i = 0; i < myJson.results.length; i++) {
       myJson.results[i]
-      var elementoHTML = document.querySelector('.contenedorDeSeries')
+      var elementoHTML = document.querySelector('.listaDeSeries')
 
-      var contenidoParaInsertar = '<div class="serie">'
+      var contenidoParaInsertar = '<li class="serie">'
       contenidoParaInsertar += '<img class="poster" src="'+posterURL+ myJson.results[i].poster_path+'" alt="">'
       contenidoParaInsertar += '<div class="tituloserie"><h1>'+myJson.results[i].name +'</h1></div>'
-      contenidoParaInsertar += '</div>'
+      contenidoParaInsertar += '</li>'
 
       elementoHTML.innerHTML += contenidoParaInsertar
 }

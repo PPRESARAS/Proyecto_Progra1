@@ -104,9 +104,29 @@ flex-direction: row;
 
 }
 
+.listaDeSeries{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
 
+.serie{
+  width: 18%;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  align-items:center;
+}
 
+.poste{
+  position: absolute;
+}
 
+.tituloserie{
+  position: absolute;
+  bottom: 50%;
+}
 
 
 
