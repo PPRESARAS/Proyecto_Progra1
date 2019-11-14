@@ -7,19 +7,20 @@ fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=8eaabce657eccc6be932f9
 
   .then (function(myJson){
     console.log(myJson);
+    var incluir = document.querySelector('.incluir');
+    var excluir = document.querySelector('.excluir');
+
     for (var i = 0; i < myJson.genres.length; i++) {
-      myJson.genres[i]
-      console.log(  myJson.genres[i].name )
+      incluir.innerHTML += '<option value="generoA" href="genero.html?id='+myJson.genres[i].id+'" class="genero">'+myJson.genres[i].name+'</option>' //quiero que con cada genero me tire una foto que lo represente
 
-      var elementoHTML = document.querySelector('.listadoDeSeries')
-      var insertar = '<select class="genero">'
-      insertar += '<option value="generoA" href="genero.html?id='+myJson.genres[i].id+'" class="genero">'+myJson.genres[i].name+'</option>' //quiero que con cada genero me tire una foto que lo represente
-      insertar += '</select>'
-
-      elementoHTML.innerHTML += insertar
-
-
+      excluir.innerHTML += '<option value="generoA" href="genero.html?id='+myJson.genres[i].id+'" class="genero">'+myJson.genres[i].name+'</option>' //quiero que con cada genero me tire una foto que lo represente
    }
 
 
   })
+
+var year = document.querySelector(".year");
+var limit = 2020;
+for (var i = 1950; i < limit; i++) {
+  year.innerHTML += '<option value="'+ i +'" class="genero">'+ i +'</option>'
+}

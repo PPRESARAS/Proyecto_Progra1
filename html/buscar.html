@@ -41,14 +41,14 @@
     <form class="formulario" name="formulario" action="buscar.html" method="get">
       <label for="generos">Generos que desea buscar... (*)</label>
       <br>
-      <select class="genero" name="pattern"  id="generoA">
-        <option value="ACA VA ID">ACA VA NOMBRE</option>
+      <select class="incluir" name="pattern"  id="generoA">
+        <option value="">ACA VA NOMBRE</option>
 
       </select>
       <br>
       <label for="generos">Generos que desea excluir...(*)</label>
       <br>
-      <select class="genero" name="" id="generoA">
+      <select class="excluir" name="" id="generoA">
 
       </select>
       <br>
@@ -60,7 +60,9 @@
       <br>
       <label for="">Año de estreno(*)</label>
       <br>
-      <input type="year" name="fecha" value="">
+      <select class="year" name="">
+        <option value="">year</option>
+      </select>
 
        <!-- (hay que hacer que tome solo numeros y valores tipo del 1950 hasta ahora, año+1, ) -->
 
