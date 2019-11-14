@@ -14,7 +14,6 @@ fetch(url)
     for(var i=0; i<datos.results.length; i++){
     datos.results[i]
     var destino = document.querySelector(".resultados");
-    //ar datosFinales = datos.data;
     var li = ""
     li += "<li>"
     li += datos.results[i].name
