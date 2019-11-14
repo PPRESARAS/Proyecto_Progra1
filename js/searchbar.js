@@ -13,10 +13,10 @@ var destinoprecarga = document.querySelector(".form-groupSearch");
 var precarga = '<input type="search" class="form-control" name="search" value='+search+'>'
   destinoprecarga.innerHTML += precarga
 
-var barraborrar = document.querySelector(".form-groupSearch")
-var barraborrada = barraborrar.children;
-var borrada = barraborrada[2]
-barraborrar.removeChild(borrada)
+// var barraborrar = document.querySelector(".form-groupSearch")
+// var barraborrada = barraborrar.children;
+// var borrada = barraborrada[2]
+// barraborrar.removeChild(borrada)
 
 
 fetch(url)
