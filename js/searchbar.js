@@ -9,14 +9,20 @@ var destinoh1 = document.querySelector(".textobuscado");
 var texto = '<h1>'+"Resultados para: "+search +'</h1>'
   destinoh1.innerHTML += texto
 
+<<<<<<< HEAD
 var destinoprecarga = document.querySelector(".form-groupSearch");
 var precarga = '<input type="search" class="form-control" name="search" value='+search+'>'
   destinoprecarga.innerHTML += precarga
+=======
+var destinoprecarga = document.querySelector(".search");
+destinoprecarga.value = search
 
-var barraborrar = document.querySelector(".form-groupSearch")
-var barraborrada = barraborrar.children;
-var borrada = barraborrada[2]
-barraborrar.removeChild(borrada)
+>>>>>>> d765e9383cdcf3e6c655e7ee6b0d2035dd1c8340
+
+// var barraborrar = document.querySelector(".form-groupSearch")
+// var barraborrada = barraborrar.children;
+// var borrada = barraborrada[2]
+// barraborrar.removeChild(borrada)
 
 
 fetch(url)
