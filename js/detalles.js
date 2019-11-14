@@ -20,18 +20,8 @@ fetch(urlSerie)
     var poster = document.querySelector('.poster');
     poster.src = posterURL + myJson.poster_path;
 
-<<<<<<< HEAD
-      var genero = ""
-      for (var i = 0; i < myJson.genres.length; i++) {
-        myJson.genres[i]
-        genero += '    <a href="genero.html" id="generos">'+myJson.genres[i].name+'</a> '
-      }
-      contenidoParaInsertar+= genero
-      contenidoParaInsertar += '</li>'
-=======
     var title = document.querySelector('.title');
     title.innerText = myJson.original_name;
->>>>>>> master
 
     var lenguaje = document.querySelector('.lenguaje')
     lenguaje.innerHTML += myJson.original_language
