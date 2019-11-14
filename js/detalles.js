@@ -23,6 +23,11 @@ fetch(urlSerie)
     var title = document.querySelector('.title');
     title.innerText = myJson.original_name;
 
+    var lenguaje = document.querySelector('.lenguaje')
+    lenguaje.innerHTML += myJson.original_language
+
+    var overview = document.querySelector ('.overview')
+    overview.innerHTML += myJson.overview
 
     var generos = document.querySelector('.generos');
     for (var i = 0; i < myJson.genres.length; i++) {
