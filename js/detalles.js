@@ -21,7 +21,7 @@ fetch(url)
       var contenidoParaInsertar = '<li>'
       contenidoParaInsertar += '<img src="'+posterURL+ myJson.poster_path+'" alt="">'
       contenidoParaInsertar += '<div class="uk-position-center uk-panel"><h1>'+myJson.name +'</h1></div>'
-      contenidoParaInsertar += "<p> " +myJson.overview +" </p>"
+      contenidoParaInsertar += "<p class= 'pdeDetalle'> " +myJson.overview +" </p>"
         contenidoParaInsertar += "<p> " +myJson.original_lenguage+" </p>"
         contenidoParaInsertar += "<p> " +myJson.first_air_date+" </p>"
 
