@@ -1,0 +1,14 @@
+.resultados{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.unidad{
+  width: 20%;
+  position:relative;
+}
+
+.tituloserie{
+  position: relative;
+}
