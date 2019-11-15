@@ -38,7 +38,7 @@
           </div>
 
   <main>
-    <form class="formulario" name="formulario" action="buscar.html" method="get">
+    <form class="formulario" name="formulario" action="buscar.html" method="get" onsubmit="return validacion()">
       <label for="generos">Generos que desea buscar... (*)</label>
       <br>
       <select class="incluir" name="pattern"  id="generoA">
@@ -70,8 +70,9 @@
 
 
       <br>
-      <button type="submit" name="button" onclick="validar()" class="enviar">Buscar</button>
+      <button type="submit" name="button"  class="enviar">Buscar</button>
     </form>
+    <!-- onclick="validar()" -->
   </main>
 
   <footer  class="Piedepagina">

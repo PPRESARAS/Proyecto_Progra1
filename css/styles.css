@@ -95,16 +95,15 @@ section.series div li:hover {
   animation: ease-in-out 2s infinite normal;
 } */
 .margen {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 .series {
 display: flex;
   position: relative;
   justify-content: space-between;
   flex-direction: column;
-
 }
+
 
 .series p {
 color: white;

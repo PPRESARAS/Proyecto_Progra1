@@ -19,9 +19,9 @@ fetch(url)
       myJson.results[i]
       var elementoHTML = document.querySelector('.listaDeSeries')
 
-      var contenidoParaInsertar = '<li class="serie">'
-      contenidoParaInsertar += '<img class="poster" src="'+posterURL+ myJson.results[i].poster_path+'" alt="">'
-      contenidoParaInsertar += '<div class="tituloserie"><a href="detalles.html?id='+myJson.results[i].id+'">'+myJson.results[i].name +'</a></div>'
+      var contenidoParaInsertar = '<li class="serie uk-transition-toggle">'
+      contenidoParaInsertar += '<img class="poster uk-transition-scale-up" src="'+posterURL+ myJson.results[i].poster_path+'" alt="">'
+      contenidoParaInsertar += '<div class="tituloserie uk-transition-scale-up"><a class="titulo" href="detalles.html?id='+myJson.results[i].id+'">'+myJson.results[i].name +'</a></div>'
       contenidoParaInsertar += '</li>'
 
       elementoHTML.innerHTML += contenidoParaInsertar
