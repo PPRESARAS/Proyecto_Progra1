@@ -17,7 +17,7 @@ fetch(urlSerie)
     console.log(myJson);
     console.log( myJson.original_language)
 
-    var poster = document.querySelector('.poster');
+    var poster = document.querySelector('.imagenPeli');
     poster.src = posterURL + myJson.poster_path;
 
     var title = document.querySelector('.title');
