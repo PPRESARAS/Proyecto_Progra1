@@ -11,9 +11,9 @@ fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=8eaabce657eccc6be932f9
     var excluir = document.querySelector('.excluir');
 
     for (var i = 0; i < myJson.genres.length; i++) {
-      incluir.innerHTML += '<option value="generoA" href="genero.html?id='+myJson.genres[i].id+'" class="genero">'+myJson.genres[i].name+'</option>' //quiero que con cada genero me tire una foto que lo represente
+      incluir.innerHTML += '<option value="generoA" class="option" href="genero.html?id='+myJson.genres[i].id+'" >'+myJson.genres[i].name+'</option>' //quiero que con cada genero me tire una foto que lo represente
 
-      excluir.innerHTML += '<option value="generoA" href="genero.html?id='+myJson.genres[i].id+'" class="genero">'+myJson.genres[i].name+'</option>' //quiero que con cada genero me tire una foto que lo represente
+      excluir.innerHTML += '<option value="generoA" class="option" href="genero.html?id='+myJson.genres[i].id+'" >'+myJson.genres[i].name+'</option>' //quiero que con cada genero me tire una foto que lo represente
    }
 
 
