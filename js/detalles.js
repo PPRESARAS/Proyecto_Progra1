@@ -31,7 +31,7 @@ fetch(urlSerie)
 
     var generos = document.querySelector('.generos');
     for (var i = 0; i < myJson.genres.length; i++) {
-      generos.innerHTML += '<a href="genero.html" id="generos" class="genero">'+myJson.genres[i].name+'</a>' + ' '
+      generos.innerHTML += '<a href="genero.html?id='+myJson.genres[i].id+'" id="generos" class="genero">'+myJson.genres[i].name+'</a>' + ' '
     }
 
 
