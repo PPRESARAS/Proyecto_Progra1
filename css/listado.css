@@ -178,22 +178,24 @@ font-size: 10px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-
+justify-content: space-between;
 
 }
 
 .info
 {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  width: 50%;
+  height: 50%;
+  justify-content: center;
 }
 
 .overview {
 
   position: relative;
-  justify-content: space-between;
-  width: 25%;
+  justify-content: center;
+
 }
 
 .estreno {
@@ -206,8 +208,10 @@ justify-content: space-between;
 .poster{
 
 position: relative;
-width: 25%;
+
 box-sizing: border-box;
+width: 30%;
+
 
 }
 
@@ -230,6 +234,27 @@ position: relative;
 
 .trailer {
   position: relative;
-  justify-content: center;
+
 
 }
+
+
+.detalle{position: relative;
+
+}
+
+.idioma{position: relative;
+
+}
+.titulo {position: relative;
+
+}
+
+.genders {
+  position: relative;
+}
+
+.uk-h3, h3 {
+    font-size: 3.5rem;
+    line-height: 1.4;
+} 

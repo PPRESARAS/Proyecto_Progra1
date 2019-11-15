@@ -20,18 +20,8 @@ fetch(urlSerie)
     var poster = document.querySelector('.poster');
     poster.src = posterURL + myJson.poster_path;
 
-<<<<<<< HEAD
-      var genero = ""
-      for (var i = 0; i < myJson.genres.length; i++) {
-        myJson.genres[i]
-        genero += '    <a href="genero.html" id="generos">'+myJson.genres[i].name+'</a> '
-      }
-      contenidoParaInsertar+= genero
-      contenidoParaInsertar += '</li>'
-=======
     var title = document.querySelector('.title');
     title.innerText = myJson.original_name;
->>>>>>> master
 
     var lenguaje = document.querySelector('.lenguaje')
     lenguaje.innerHTML += myJson.original_language
@@ -58,8 +48,15 @@ fetch(urlSerie)
     .then(function(myJson){
       console.log(myJson.results[0].key);
 
-      var elementoHTML = document.querySelector('.detalles')
+      var elementoHTML = document.querySelector('.trailer')
+          var contenidoParaInsertar = '<p uk-margin> <a class="uk-button uk-button-default" href="#modal-media'
+          contenidoParaInsertar += '-youtube" uk-toggle>Trailer</a> </p>'
+          contenidoParaInsertar += '<div id="modal-media-youtube" class="uk-flex-top" uk-modal>'
+          contenidoParaInsertar += '<div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">'
+          contenidoParaInsertar += '<button class="uk-modal-close-outside" type="button" uk-close></button>'
+          contenidoParaInsertar +=  ' <iframe src="https://www.youtube-nocookie.com/embed/'+myJson.results[0].key+'" width="720" height="1080" frameborder="0" uk-video></iframe> </div> </div>'
 
-          var contenidoParaInsertar =  '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+myJson.results[0].key+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class="trailer"> </iframe>'
           elementoHTML.innerHTML += contenidoParaInsertar
       })
+/*<iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA" width="1920" height="1080" frameborder="0" uk-video></iframe>*/
+  /*var contenidoParaInsertar =  '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+myJson.results[0].key+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class="trailer"> </iframe>'*/
