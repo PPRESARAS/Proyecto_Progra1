@@ -38,7 +38,7 @@
           </div>
 
   <main>
-    <form class="formulario" name="formulario" action="buscar.html" method="get" onsubmit="return validacion()">
+    <form class="formulario" name="formulario" action="buscar.html" method="get">
       <label for="generos">Generos que desea buscar... (*)</label>
       <br>
       <select class="incluir" name="pattern"  id="generoA">
@@ -49,15 +49,20 @@
       <label for="generos">Generos que desea excluir...(*)</label>
       <br>
       <select class="excluir" name="" id="generoA">
-        <option value="">GENEROS:</option>
+        <option value="none">GENEROS:</option>
 
       </select>
       <br>
       <label for="ordenarPor">Ordenar series por...(*)</label>
       <br>
-      <select class="ordenar" name="">
-        <option value="" class="option" id="generoA">ORDENAR POR:</option>
-
+      <select class="ordenar" name="" id="generoA">
+        <option value="" class="option">ORDENAR POR:</option>
+        <option value="vote_average.desc">De mayor a menor votadas</option>
+        <option value="vote_average.asc">De menor a mayor votadas</option>
+        <option value="first_air_date.desc">Mas recientes estrenos</option>
+        <option value="first_air_date.asc">Series mas viejas estrenadas</option>
+        <option value="popularity.desc">De mayor a menor popularidad</option>
+        <option value="popularity.asc">De menor a mayor popularidad</option>
       </select>
       <br>
       <label for="">Año de estreno(*)</label>
