@@ -60,3 +60,47 @@ fetch(urlSerie)
       })
 /*<iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA" width="1920" height="1080" frameborder="0" uk-video></iframe>*/
   /*var contenidoParaInsertar =  '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+myJson.results[0].key+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class="trailer"> </iframe>'*/
+
+
+
+
+
+
+
+
+  var relacionadas =(" https://api.themoviedb.org/3/tv/"+id+"/recommendations?api_key=8eaabce657eccc6be932f97172c1a728&language=en-US&page=1")
+
+  fetch(relacionadas)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(myJson) {
+      var poster = 'https://image.tmdb.org/t/p/original'
+      console.log(myJson);
+
+
+        var posters = document.querySelector('.relacion');
+        var agregar = ''
+          for (var i = 0; i < myJson.results.length; i++){
+            var sarasa = poster + myJson.results[i].poster_path;
+
+            agregar = '<li class="relacionSerie">'
+            agregar += '<img class="poster" src="'+ sarasa+'" alt="">'
+            agregar += '</li>'
+
+            console.log(agregar, i);
+            posters.innerHTML +=  agregar
+
+          }
+
+
+
+
+    });
+
+
+  var recom = document.querySelector(".relacionadas");
+var btn = document.querySelector(".botonchoto");
+btn.onclick = function (){
+ recom.classList.toggle('show')
+}
