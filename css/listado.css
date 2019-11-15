@@ -1,6 +1,6 @@
 body{
-  /*background-color: #081C24;*/
-  background-image: url(../imagenes/fondo3.jpg);
+  background-color: #081C24;
+
   height: 100%
 }
 /*cabezera*/
@@ -137,9 +137,11 @@ flex-direction: row;
   display: flex;
   flex-direction: row;
   border-top: 1px solid gainsboro;
-text-align: center;
-height: 200px;
-background-color: white;
+  text-align: center;
+  height: 200px;
+  background-color: white;
+  margin-top: 30px
+
 
 
 
@@ -186,7 +188,7 @@ justify-content: space-between;
 {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 65%;
   height: 50%;
   justify-content: center;
 }
@@ -262,10 +264,19 @@ position: relative;
 
 .relacionadas {
   display: none;
+  width: 90%;
+  justify-content: center;
+border-radius: 1px;
 }
 
 
 .show{
   display: block;
 
+}
+.botonchoto {
+  color: red;
+}
+.botonbueno{
+  color: red;
 }
