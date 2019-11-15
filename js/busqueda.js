@@ -33,6 +33,6 @@ form.onsubmit = function(validar) {
   console.log(opciones);
   var selectIncluir = document.querySelector(".incluir")
   if (selectIncluir.selectedIndex == 0) {
-    UIkit.notification('[ERROR] Debes elegir un genero a buscar!');
+    UIkit.notification('[ERROR] Debes elegir un genero a buscar!', {status:"danger"});
   }
 }
