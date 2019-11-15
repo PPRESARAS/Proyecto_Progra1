@@ -30,13 +30,26 @@ fetch(url)
     datos.results[i]
     //console.log(datos.results[i])
     var destino = document.querySelector(".resultados");
-    var li = ""
-    li += "<li class='unidad'>"
-    li += '<img class="poster" src="'+posterURL+ datos.results[i].poster_path+'" alt=""</a>'
-    li += '<a href="detalles.html?id='+datos.results[i].id+'" class="tituloserie">'+datos.results[i].name+'</a>'
-    li += "</li>"
 
+
+
+
+
+    if(datos.results[i].poster_path == null){
+      var lifallo = ""
+      lifallo += "<li class='unidad uk-transition-toggle'>"
+      lifallo += '<img class="poster uk-transition-scale-up" src="../imagenes/mati.jpg" alt=""</a>'
+      lifallo += '<div class="contenedortitulo uk-transition-scale-up"> <a href="detalles.html?id='+datos.results[i].id+'" class="tituloserie">'+datos.results[i].name+'</a></div>'
+      lifallo += "</li>"
+      destino.innerHTML += lifallo
+    }else{
+      var li = ""
+      li += "<li class='unidad uk-transition-toggle'>"
+      li += '<img class="poster uk-transition-scale-up" src="'+posterURL+ datos.results[i].poster_path+'" alt=""</a>'
+      li += '<div class="contenedortitulo uk-transition-scale-up"> <a href="detalles.html?id='+datos.results[i].id+'" class="tituloserie">'+datos.results[i].name+'</a> </div>'
+      li += "</li>"
       destino.innerHTML += li
+    }
 
    }
 

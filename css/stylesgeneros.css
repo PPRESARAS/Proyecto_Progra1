@@ -119,20 +119,49 @@ flex-direction: row;
   text-align: center;
   align-items:center;
   margin: 10px;
+  background: rgba(255, 0, 0, 0);
+
 }
 
-.poste{
-  position: absolute;
+
+
+.serie:hover {
+  iwidth: 22%;
+
+}
+.serie:hover a{
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+
+}
+
+.serie:hover .tituloserie{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(30, 30, 30, 0.5);
+}
+
+
+
+.poster{
+opacity: 1 !important;
 }
 
 .tituloserie{
+  display: flex;
   position: absolute;
-  bottom: 50%;
+  top:0;
+  left: 0;
   justify-content: center;
-
+  z-index: 10;
+  align-items: center;
 }
 
-
+.titulo {
+  opacity: 0;
+  z-index: 11;
+}
 
 
 

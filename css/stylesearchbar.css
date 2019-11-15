@@ -1,14 +1,52 @@
+
+
 .resultados{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
 }
 
 
 .unidad{
-  width: 20%;
-  position:relative;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 18%;
+  text-align: center;
+  align-items: center;
+  margin: 10px;
 }
 
+
 .tituloserie{
-  position: relative;
+  position: absolute;
+  opacity: 0;
+}
+
+.poster {
+  opacity: 1 !important;
+}
+
+.unidad:hover .contenedortitulo{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(30, 30, 30, 0.5);
+}
+
+.unidad:hover a{
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+
+}
+
+.contenedortitulo{
+  display: flex;
+  position: absolute;
+  top:0;
+  left: 0;
+  justify-content: center;
+  z-index: 10;
+  align-items: center;
 }
