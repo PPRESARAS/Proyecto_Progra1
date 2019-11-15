@@ -24,3 +24,14 @@ var limit = 2020;
 for (var i = 1950; i < limit; i++) {
   year.innerHTML += '<option value="'+ i +'" class="genero">'+ i +'</option>'
 }
+
+
+// validacion del formulario
+
+function validacion(){
+  if (){
+    alert ("[ERROR], debes completar el campo!");
+    return false;
+  }
+  return true;
+}
