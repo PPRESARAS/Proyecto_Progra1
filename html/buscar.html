@@ -42,33 +42,35 @@
       <label for="generos">Generos que desea buscar... (*)</label>
       <br>
       <select class="incluir" name="pattern"  id="generoA">
-        <option value="">ACA VA NOMBRE</option>
+        <option value="">GENEROS:</option>
 
       </select>
       <br>
       <label for="generos">Generos que desea excluir...(*)</label>
       <br>
       <select class="excluir" name="" id="generoA">
+        <option value="">GENEROS:</option>
 
       </select>
       <br>
       <label for="ordenarPor">Ordenar series por...(*)</label>
       <br>
       <select class="ordenar" name="">
+        <option value="" class="option" id="generoA">ORDENAR POR:</option>
 
       </select>
       <br>
       <label for="">Año de estreno(*)</label>
       <br>
       <select class="year" name="">
-        <option value="">year</option>
+        <option value="">AÑO:</option>
       </select>
 
        <!-- (hay que hacer que tome solo numeros y valores tipo del 1950 hasta ahora, año+1, ) -->
 
 
       <br>
-      <button type="submit" name="button" onclick="validar()">Buscar</button>
+      <button type="submit" name="button" onclick="validar()" class="enviar">Buscar</button>
     </form>
   </main>
 
