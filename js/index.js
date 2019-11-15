@@ -18,9 +18,9 @@ fetch("https://api.themoviedb.org/3/tv/top_rated?api_key=8eaabce657eccc6be932f97
       console.log(  posterURL+myJson.results[i].poster_path)
       var elementoHTML = document.querySelector('.puntaje')
 
-      var contenidoParaInsertar = '<li>'
-      contenidoParaInsertar += '<img src="'+posterURL+ myJson.results[i].poster_path+'" alt="">'
-      contenidoParaInsertar += '<div class="uk-position-center uk-panel"><a href="detalles.html?id='+ myJson.results[i].id+'">'+myJson.results[i].name +'</a></div>'
+      var contenidoParaInsertar = '<li class="uk-transition-toggle unidad">'
+      contenidoParaInsertar += '<img src="'+posterURL+ myJson.results[i].poster_path+'" alt="" class="poster uk-transition-scale-up">'
+      contenidoParaInsertar += '<div class="uk-position-center uk-panel contenedora  "><a href="detalles.html?id='+ myJson.results[i].id+'" class="link">'+myJson.results[i].name +'</a></div>'
       contenidoParaInsertar += '</li>'
 
       elementoHTML.innerHTML += contenidoParaInsertar

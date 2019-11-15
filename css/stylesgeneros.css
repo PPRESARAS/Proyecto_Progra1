@@ -156,11 +156,21 @@ opacity: 1 !important;
   justify-content: center;
   z-index: 10;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .titulo {
+  display: flex;
   opacity: 0;
   z-index: 11;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
 }
 
 

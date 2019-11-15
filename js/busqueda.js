@@ -32,7 +32,30 @@ form.onsubmit = function(validar) {
   var opciones = form.options;
   console.log(opciones);
   var selectIncluir = document.querySelector(".incluir")
-  if (selectIncluir.selectedIndex == 0) {
-    UIkit.notification('[ERROR] Debes elegir un genero a buscar!');
+  var selectExcluir = document.querySelector(".excluir")
+
+  if (selectIncluir.selectedIndex == 0 && selectExcluir.selectedIndex == 0){
+  UIkit.notification('[ERROR] Debes elegir un genero a buscar!', {status:"danger"})
   }
+
+  else if (selectIncluir.selectedIndex == selectExcluir.selectedIndex) {
+  UIkit.notification('[ERROR] No puedes incluir y excluir el mismo genero!', {status:"danger"})
+  }
+
+  else if (selectIncluir.selectedIndex == 0 && selectExcluir.selectedIndex !== 0) {
+    console.log("entro en el primero");
+  return true;
+  }
+
+  else if (selectIncluir.selectedIndex ==0 ) {
+    console.log('entro en segundo');
+  return true;
+  }
+
+  else if (selectIncluir.selectedIndex !== 0 && selectExcluir.selectedIndex == 0) {
+    console.log('entro en tercero');
+  return true;
+  }
+
 }
+// para el order, hacer url search param, ubicarlo y fetch
