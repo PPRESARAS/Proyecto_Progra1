@@ -45,7 +45,6 @@ form.onsubmit = function(validar) {
   else if (selectIncluir.selectedIndex == 0 && selectExcluir.selectedIndex !== 0) {
     console.log("entro en el primero");
   return true;
-
   }
 
   else if (selectIncluir.selectedIndex ==0 ) {
