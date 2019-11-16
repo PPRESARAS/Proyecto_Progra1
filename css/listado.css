@@ -9,12 +9,26 @@ body{
   width: 100%;
   padding: 0px;
   margin: 1px;
-  display: flex;
-    background-color: white;
+  display:flex;
+      background-color: white;
     overflow: hidden;
     z-index: 999;
-    margin-bottom: 50px;
 
+
+justify-content: space-between;
+}
+
+
+
+.buscador{
+position: relative;
+ top: 60px;
+
+}
+
+.casa {
+  position: relative;
+  top: 60px;
 }
 .headerul{
   background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );

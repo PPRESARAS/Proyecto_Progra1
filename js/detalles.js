@@ -54,7 +54,7 @@ fetch(urlSerie)
           contenidoParaInsertar += '<div id="modal-media-youtube" class="uk-flex-top" uk-modal>'
           contenidoParaInsertar += '<div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">'
           contenidoParaInsertar += '<button class="uk-modal-close-outside" type="button" uk-close></button>'
-          contenidoParaInsertar +=  ' <iframe src="https://www.youtube-nocookie.com/embed/'+myJson.results[0].key+'" width="720" height="1080" frameborder="0" uk-video></iframe> </div> </div>'
+          contenidoParaInsertar +=  ' <iframe src="https://www.youtube-nocookie.com/embed/'+myJson.results[0].key+'" width="720" height="720" frameborder="0" uk-video></iframe> </div> </div>'
 
           elementoHTML.innerHTML += contenidoParaInsertar
       })
