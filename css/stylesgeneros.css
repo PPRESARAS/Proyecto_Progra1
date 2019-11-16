@@ -26,6 +26,10 @@ background-color: #081C24;
   justify-content: space-between;
   align-items: center;
 }
+.botones {
+  left: -20px;
+}
+
 
 .logo{
   width: 170px;

@@ -18,6 +18,10 @@ body{
 justify-content: space-between;
 }
 
+.botones {
+  left: -20px;
+}
+
 
 
 .buscador{

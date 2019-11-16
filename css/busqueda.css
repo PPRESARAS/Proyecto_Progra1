@@ -38,6 +38,9 @@ width: 110%;
 .buscadorheader{
 width: 40%;
 }
+.botones {
+  left: -20px;
+}
 
 .form-control{
 width: 90%;

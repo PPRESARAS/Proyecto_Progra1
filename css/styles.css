@@ -27,7 +27,7 @@ body{
   justify-content: space-between;
   align-items: center;
   z-index: 999;
-  
+
 }
 
 .logo{
@@ -99,10 +99,22 @@ main{
   display: flex;
   animation: ease-in-out 2s infinite normal;
 } */
-.margen {
-  margin-bottom: 100px;
-  margin-top: 100px;
+
+.titulo {
+      background: rgba(255,255,255,.08);
+      width: 100% ;
+
+
 }
+.margen {
+  margin-bottom: 20px;
+
+}
+
+.botones {
+  left: -20px;
+}
+
 .series {
 display: flex;
   position: relative;

@@ -25,10 +25,19 @@
               <i id="icono" class="fas fa-search"></i>
             </div>
           </form>
-              <a href="buscar.html">Filtros</a>
-              <a href="listado.html" id="generos">Generos</a>
-              <a href="detalles.html" id="detalles">Detalles de las Series</a>
-        </ul>
+
+
+                      <div class="uk-inline boundary botones">
+                          <button class="uk-button uk-button-default" type="button">Series</button>
+                          <div uk-dropdown="pos: left-top" style="position:fixed;">
+                              <ul class="uk-nav uk-dropdown-nav">
+                                  <li class="uk-active miLi"><a href="buscar.html">Filtros</a></li>
+                                  <li miLi><a "uk-button uk-button-default" href="listado.html" id="generos">Generos</a>
+                                  <li class="uk-nav-divider miLi"></li>
+                              </ul>
+                          </div>
+                      </div>
+
 
 
     		</header>
@@ -62,8 +71,11 @@
         <div class="logoTmdb">
           <img src="../imagenes/logodb.png" alt="">
         </div>
-
       </footer>
+
+
+
+
 
   <script src="../js/searchbar.js"></script>
   </body>
