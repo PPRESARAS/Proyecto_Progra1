@@ -43,17 +43,17 @@ form.onsubmit = function(validar) {
   }
 
   else if (selectIncluir.selectedIndex == 0 && selectExcluir.selectedIndex !== 0) {
-    console.log("entro en el primero");
+    console.log(selectExcluir.selectedIndex);
   return true;
   }
 
   else if (selectIncluir.selectedIndex ==0 ) {
-    console.log('entro en segundo');
+    console.log(selectIncluir.selectedIndex);
   return true;
   }
 
   else if (selectIncluir.selectedIndex !== 0 && selectExcluir.selectedIndex == 0) {
-    console.log('entro en tercero');
+    console.log(selectIncluir.selectedIndex);
   return true;
   }
 
