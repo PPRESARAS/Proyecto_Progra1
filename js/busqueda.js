@@ -64,12 +64,13 @@ var searchParams = new URLSearchParams(queryString)
 
 var id = searchParams.get("id")
 
-var urlA= "https://api.themoviedb.org/3/discover/tv?"+ id + "api_key=8eaabce657eccc6be932f97172c1a728&language=en-US&sort_by=vote_average.desc&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false"
+var urlA= "https://api.themoviedb.org/3/discover/tv?api_key=8eaabce657eccc6be932f97172c1a728&sort_by=vote_average.desc"
+
 
 fetch(urlA)
   .then(function(response){
     return response.json();
   })
   .then (function(myJson){
-    var 
+    console.log(myJson);
   })
