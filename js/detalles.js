@@ -86,6 +86,7 @@ fetch(urlSerie)
 
             agregar = '<li class="relacionSerie">'
             agregar += '<img class="poster" src="'+ sarasa+'" alt="">'
+            agregar +='<div class="uk-position-center uk-panel contenedora  "><a href="detalles.html?id='+ myJson.results[i].id+'" class="link">'+myJson.results[i].name +'</a></div>'
             agregar += '</li>'
 
             console.log(agregar, i);

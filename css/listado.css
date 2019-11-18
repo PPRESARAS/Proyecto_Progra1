@@ -277,6 +277,7 @@ position: relative;
 .uk-h3, h3 {
     font-size: 3.5rem;
     line-height: 1.4;
+    color: white;
 }
 
 
@@ -297,4 +298,10 @@ border-radius: 1px;
 }
 .botonbueno{
   color: red;
+}
+
+.pagina {
+  font-size: xx-large;
+  color: antiquewhite;
+  text-decoration:underline;
 }
