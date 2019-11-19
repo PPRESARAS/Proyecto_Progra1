@@ -50,7 +50,7 @@ fetch(urlSerie)
 
       var elementoHTML = document.querySelector('.trailer')
           var contenidoParaInsertar = '<p uk-margin> <a class="uk-button uk-button-default botonbueno" href="#modal-media'
-          contenidoParaInsertar += '-youtube" uk-toggle>Trailer</a> </p>'
+          contenidoParaInsertar += '-youtube" uk-toggle>Ver Trailer</a> </p>'
           contenidoParaInsertar += '<div id="modal-media-youtube" class="uk-flex-top" uk-modal>'
           contenidoParaInsertar += '<div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">'
           contenidoParaInsertar += '<button class="uk-modal-close-outside" type="button" uk-close></button>'

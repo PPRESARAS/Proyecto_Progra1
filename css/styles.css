@@ -241,7 +241,12 @@ font-size: 10px;
 .uk-slider-items:not(.uk-grid){
   justify-content: space-between;
 }
+@media only screen and (min-width: 420px) {
+  body {
+width: 100%;
+  }
+  @media only screen and (max-width: 768px) {
+    body {
+      width: 100%;
 
-@media  {
-
-}
+    }
