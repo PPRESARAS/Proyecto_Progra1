@@ -138,6 +138,37 @@ flex-direction: row;
     box-shadow: 0 0 4px rgba(0,0,0,0.2);
 }
 
+.poster{
+  opacity: 1 !important;
+}
+
+
+.relacionSerie{
+  margin: 10px;
+}
+
+.link{
+  width: 100%;
+  height: 100%;
+}
+
+.contenedora{
+  height: 100%;
+  width: 100%;
+}
+
+.relacionSerie:hover a{
+  width: 100%;
+  height:100%;
+  background-color: rgba(1, 0, 0, 0.5);
+}
+
+.relacionSerie:hover .contenedora {
+  width: 100%;
+  height: 100%;
+
+}
+
 
 
 

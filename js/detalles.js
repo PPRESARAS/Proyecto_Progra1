@@ -84,9 +84,9 @@ fetch(urlSerie)
           for (var i = 0; i < myJson.results.length; i++){
             var sarasa = poster + myJson.results[i].poster_path;
 
-            agregar = '<li class="relacionSerie">'
-            agregar += '<img class="poster" src="'+ sarasa+'" alt="">'
-            agregar +='<div class="uk-position-center uk-panel contenedora  "><a href="detalles.html?id='+ myJson.results[i].id+'" class="link">'+myJson.results[i].name +'</a></div>'
+            agregar = '<li class="relacionSerie uk-transition-toggle">'
+            agregar += '<img class="poster uk-transition-scale-up" src="'+ sarasa+'" alt="">'
+            agregar +='<div class="uk-position-center uk-panel contenedora "><a href="detalles.html?id='+ myJson.results[i].id+'" class="link uk-transition-scale-up">'+myJson.results[i].name +'</a></div>'
             agregar += '</li>'
 
             console.log(agregar, i);
