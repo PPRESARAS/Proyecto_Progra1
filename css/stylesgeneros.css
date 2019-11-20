@@ -99,16 +99,14 @@ color: white;
 
 
 .popular {
-
-  position: relative;
+position: relative;
 justify-content: space-between;
 flex-direction: row;
 
 }
 
 .alAire {
-
-  position: relative;
+position: relative;
 justify-content: space-between;
 flex-direction: row;
 
