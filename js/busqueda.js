@@ -92,13 +92,11 @@ fetch(urlA)
       console.log(posterURL+myJson.results[i].poster_path)
       var elementoHTML = document.querySelector('.formulario')
 
-      var contenido = '<ul class="ulBuscador" uk-slider>'
-      contenido = '<li class="liBuscador">'
-      contenido += '<img src="'+ posterURL + myJson.results[i].poster_path+'" alt="">'
-      contenido += '<div class="divaBuscador"><a class="aBuscador" href="detalles.html?id='+ myJson.results[i].id+'">'+myJson.results[i].name +'</a></div>'
-      contenido += '</li>'
-      contenido += '</ul>'
+      var busqueda = '<li class="liBuscador uk-transition-toggle">'
+      busqueda += '<img class="posterBusqueda uk-transition-scale-up"src="'+ posterURL + myJson.results[i].poster_path+'" alt="">'
+      busqueda += '<div class="divaBuscador uk-transition-scale-up"><a class="aBuscador" href="detalles.html?id='+ myJson.results[i].id+'">'+myJson.results[i].name +'</a></div>'
+      busqueda += '</li>'
 
-      elementoHTML.innerHTML += contenido
+      elementoHTML.innerHTML += busqueda
     }
   });

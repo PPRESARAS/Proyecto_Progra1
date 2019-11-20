@@ -85,10 +85,6 @@ font-weight: bold;
 font-size: 15px;
 }
 
-.option{
-
-}
-
 .series {
 position: relative;
 justify-content: space-between;
@@ -113,6 +109,43 @@ flex-direction: row;
 
 .formulario{
 text-align: center;
+}
+
+.liBuscador{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 18%;
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.posterBusqueda {
+  opacity: 1 !important;
+}
+
+.liBuscador:hover .divaBuscador{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(30, 30, 30, 0.5);
+}
+
+.liBuscador:hover a{
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+
+}
+
+.divaBuscador{
+  display: flex;
+  position: absolute;
+  top:0;
+  left: 0;
+  justify-content: center;
+  z-index: 10;
+  align-items: center;
 }
 
 
