@@ -10,9 +10,9 @@ fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=8eaabce657eccc6be932f9
     var incluir = document.querySelector('.incluir');
     var excluir = document.querySelector('.excluir');
     for (var i = 0; i < myJson.genres.length; i++) {
-      incluir.innerHTML += '<option value="generoA" href="genero.html?id='+myJson.genres[i].id+'" >'+myJson.genres[i].name+'</option>'
+      incluir.innerHTML += '<option value="'+myJson.genres[i].id+'"  >'+myJson.genres[i].name+'</option>'
 
-      excluir.innerHTML += '<option value="generoA" href="genero.html?id='+myJson.genres[i].id+'" >'+myJson.genres[i].name+'</option>'
+      excluir.innerHTML += '<option value="'+myJson.genres[i].id+'">'+myJson.genres[i].name+'</option>'
    }
 })
 
@@ -50,53 +50,55 @@ form.onsubmit = function(validar) {
     console.log(selectIncluir.selectedIndex);
   return true;
   }
+  // else {
+  // }
 
-  else if (selectIncluir.selectedIndex !== 0 && selectExcluir.selectedIndex == 0) {
-    console.log(selectIncluir.selectedIndex);
-  return true;
-  }
-
+  form.onsubmit = function() {}
 }
 // para el order, hacer url search param, ubicarlo y fetch
-var queryString = location.search;
 
-var searchParams = new URLSearchParams(queryString)
+var query = new URLSearchParams(location.search)
 
-var id = searchParams.get("id")
+// HACERLO CON TODAS LAS COSAS DEL FORM
+var generoAIncluir = query.get('generoIncluir')
+var generoAExcluir = query.get('generoExcluir')
+var ordenarPor = query.get('orden')
+var queYear = query.get('year')
+if(generoAIncluir == null){
+  generoAIncluir == ""
+}
+if(generoAExcluir == null){
+  generoAExcluir == ""
+}
+if(ordenarPor == null){
+  ordenarPor == ""
+}
+if(queYear == null){
+  queYear == ""
+}
 
-var yearSelect = document.querySelector(".year");
-yearSelect.value = queryString.year;
-var generoSelect = document.querySelector (".incluir");
-generoSelect.value = queryString.with_genre;
-var sinGeneroSelect = document.querySelector (".excluir");
-sinGeneroSelect.value = queryString.without_genre;
-var ordenSelect = document.querySelector (".ordenar");
-ordenSelect.value = queryString.order;
-
-var urlA= "https://api.themoviedb.org/3/discover/tv?api_key=8eaabce657eccc6be932f97172c1a728&sort_by="+ queryString.order + "&first_air_date=" + queryString.year + "&with_genres=" + queryString.with_genre + "&without_genres=" + queryString.without_genre;
+var urlA= "https://api.themoviedb.org/3/discover/tv?api_key=8eaabce657eccc6be932f97172c1a728&sort_by="+ ordenarPor + "&first_air_date=" + queYear + "&with_genres=" + generoAIncluir + "&without_genres=" + generoAExcluir;
 
 fetch(urlA)
-  .then(function(response){
+  .then(function(response) {
     return response.json();
   })
-  .then (function(myJson){
+  .then(function(myJson) {
+    var posterURL = 'https://image.tmdb.org/t/p/original'
     console.log(myJson);
-    var resultsContainer = document.querySelector (".formulario")
-    var titulo = ""
-    console.log(titulo);
     for (var i = 0; i < myJson.results.length; i++) {
-      myJson[i]
+      myJson.results[i]
+      console.log(myJson.results[i].name)
+      console.log(posterURL+myJson.results[i].poster_path)
+      var elementoHTML = document.querySelector('.formulario')
 
-      titulo = myJson.results[i].name
+      var contenido = '<ul class="ulBuscador" uk-slider>'
+      contenido = '<li class="liBuscador">'
+      contenido += '<img src="'+ posterURL + myJson.results[i].poster_path+'" alt="">'
+      contenido += '<div class="divaBuscador"><a class="aBuscador" href="detalles.html?id='+ myJson.results[i].id+'">'+myJson.results[i].name +'</a></div>'
+      contenido += '</li>'
+      contenido += '</ul>'
 
-      resultsContainer.innerHTML += createItemHtml (".enivar", titulo, myJson.results[i].name)
-      console.log(titulo);
+      elementoHTML.innerHTML += contenido
     }
-  })
-
-  function createItemHtml(clase, titulo, img_url){
-    var imagen = img_url
-  }
-
-
-  // CHEQUEAR BIEN TODO
+  });

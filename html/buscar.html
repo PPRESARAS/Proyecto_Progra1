@@ -22,7 +22,7 @@
         <form class="buscadorheader" action="searchbar.html" method="get">
           <div class="form-groupSearch">
             <input type="search" class="form-control" name="search" placeholder="  Buscar">
-            <span uk-icon="search"></span>  
+            <span uk-icon="search"></span>
             <i id="icono" class="fas fa-search"></i>
                     </div>
         </form>
@@ -46,40 +46,40 @@
   		</header>
 <main>
     <form class="formulario" name="formulario" action="buscar.html" method="get">
-      <label for="generos">Generos que desea buscar... (*)</label>
+      <label for="generos">Generos que desea buscar...</label>
       <br>
-      <select class="incluir" name="pattern"  id="generoA">
+      <select class="incluir" name="generoIncluir" id="generoA">
         <option value="">GENEROS:</option>
 
       </select>
       <br>
-      <label for="generos">Generos que desea excluir...(*)</label>
+      <label for="generos">Generos que desea excluir...</label>
       <br>
-      <select class="excluir" name="" id="generoA">
-        <option value="none">GENEROS:</option>
+      <select class="excluir" name="generoExcluir" id="generoA">
+        <option value="">GENEROS:</option>
 
       </select>
       <br>
-      <label for="ordenarPor">Ordenar series por...(*)</label>
+      <label for="ordenarPor">Ordenar series por...</label>
       <br>
-      <select class="ordenar" name="order" id="generoA">
+      <select class="ordenar" name="orden" id="generoA">
         <option value="" class="option">ORDENAR POR:</option>
-        <option value="vote_average.desc" name="A">De mayor a menor votadas</option>
-        <option value="vote_average.asc" name="B">De menor a mayor votadas</option>
-        <option value="first_air_date.desc" name="C">Mas recientes estrenos</option>
-        <option value="first_air_date.asc" name="D">Series mas viejas estrenadas</option>
-        <option value="popularity.desc" name="E">De mayor a menor popularidad</option>
-        <option value="popularity.asc" name="F">De menor a mayor popularidad</option>
+        <option value="vote_average.desc">De mayor a menor votadas</option>
+        <option value="vote_average.asc">De menor a mayor votadas</option>
+        <option value="first_air_date.desc">Mas recientes estrenos</option>
+        <option value="first_air_date.asc">Series mas viejas estrenadas</option>
+        <option value="popularity.desc">De mayor a menor popularidad</option>
+        <option value="popularity.asc">De menor a mayor popularidad</option>
       </select>
       <br>
-      <label for="">Año de estreno(*)</label>
+      <label for="">Año de estreno</label>
       <br>
-      <select class="year" name="">
+      <select class="year" name="year">
         <option value="">AÑO:</option>
       </select>
 
       <br>
-      <button type="submit" name="button"  class="enviar">Buscar</button>
+      <button type="submit" class="enviar">Buscar</button>
     </form>
     <!-- onclick="validar()" -->
   </main>
