@@ -56,7 +56,7 @@ fetch("https://api.themoviedb.org/3/tv/top_rated?api_key=8eaabce657eccc6be932f97
       var elementoHTML = document.querySelector('.populares')
       var insertar = '<li class="uk-transition-toggle unidad">'
       insertar += '<img src="'+posterURL+ myJson.results[i].poster_path+'" alt="" class="poster uk-transition-scale-up"</a>' //quiero que con cada genero me tire una foto que lo represente
-      insertar += '<div class="uk-position-center uk-panel contenedora"><a href="detalles.html?id='+ myJson.results[i].id+'" class="uk-transition-scale-up">'+myJson.results[i].name +'</a></div>'
+      insertar += '<div class="uk-position-center uk-panel contenedora"> <a href="detalles.html?id='+ myJson.results[i].id+'" class="uk-transition-scale-up">'+myJson.results[i].name +'</a> </div>'
       insertar += '</li>'
 
       elementoHTML.innerHTML += insertar
