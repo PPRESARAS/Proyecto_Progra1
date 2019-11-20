@@ -78,6 +78,12 @@ text-decoration: none;
 
 }
 
+.tituloDelGenero{
+  font-family: 'Open Sans', sans-serif;
+  padding: 15px;
+  font-size: 50px;
+  padding-left: 43px;
+}
 
 
 .series {

@@ -31,7 +31,7 @@ fetch(urlSerie)
 
     var generos = document.querySelector('.generos');
     for (var i = 0; i < myJson.genres.length; i++) {
-      generos.innerHTML += '<a href="genero.html?id='+myJson.genres[i].id+'" id="generos" class="genero">'+myJson.genres[i].name+'</a>' + ' '
+      generos.innerHTML += '<a href="genero.html?id='+myJson.genres[i].id+'&nombre='+myJson.genres[i].name+'& id="generos" class="genero">'+myJson.genres[i].name+'</a>' + ' '
     }
 
 
@@ -105,3 +105,23 @@ var btn = document.querySelector(".botonchoto");
 btn.onclick = function (){
  recom.classList.toggle('show')
 }
+
+
+
+
+
+
+
+
+
+
+//
+//       (\__/)
+//    ⠀  (•ㅅ•)     los profes arreglando
+//  　＿ノ ヽ ノ＼  __   el js
+//  /　`/ ⌒Ｙ⌒ Ｙ　ヽ
+// ( 　(三ヽ人　 /　　|
+// |　ﾉ⌒＼ ￣￣ヽ　 ノ   
+// ヽ＿＿＿＞､＿＿_／
+// 　　 ｜( 王 )〈    (\__/)
+//  　　/ ﾐ ー 彡\    (•ㅅ•)  yo
