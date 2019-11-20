@@ -38,6 +38,7 @@ width: 110%;
 .buscadorheader{
 width: 40%;
 }
+
 .botones {
   left: -20px;
 }
@@ -54,11 +55,9 @@ color: white;
 font-size: 30px;
 }
 
-#generos{
-
-}
-.main {
-
+main{
+padding-top: 80px;
+width: 100%;
 }
 
 .container {
@@ -147,6 +146,42 @@ text-align: center;
   z-index: 10;
   align-items: center;
 }
+
+.resultados {
+position: relative;
+justify-content: space-between;
+flex-direction: row;
+}
+
+.bordes {
+  justify-content: space-between;
+  padding: 1px;
+  width: 94%;
+}
+
+.uk-slider-items:not(.uk-grid){
+  justify-content: space-between;
+}
+
+.series {
+display: flex;
+position: relative;
+justify-content: space-between;
+flex-direction: column;
+margin: 90px;
+}
+
+.series p {
+color:  antiquewhite;
+text-align: center;
+font-size: 25px;
+text-decoration: underline;
+}
+
+.margen {
+margin-bottom: 20px;
+}
+
 
 
 
