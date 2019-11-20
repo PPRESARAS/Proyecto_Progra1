@@ -71,8 +71,8 @@ position: relative;
   font-size: 30px;
 }
 
-.generos{
-font-family: 'Roboto Mono', monospace;
+#generos{
+
 }
 .main {
 
@@ -150,10 +150,6 @@ flex-direction: row;
 .link{
   width: 100%;
   height: 100%;
-}
-
-.genero{
-  text-align: center;
 }
 
 .contenedora{
