@@ -86,22 +86,23 @@ text-align: center;
 color: white;
 text-align: center;
 font-size: 25px;
-text-decoration: underline;
 }
 
 .enviar{
-border-radius: 10%;
+border-radius: 19%;
 width: 10%;
 font-weight: bold;
-font-size: 15px;
 position: relative;
 top: 10px;
+background-color: black;
 }
 
 .enviar p{
-font-size: 20px;
-
-align-items: center;
+font-size: 25px;
+position: relative;
+top: 9px;
+right: 12px;
+color: white;
 }
 
 .textoBuscado h1{
