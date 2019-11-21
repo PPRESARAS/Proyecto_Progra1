@@ -6,7 +6,7 @@ var url = "https://api.themoviedb.org/3/search/tv?api_key=8eaabce657eccc6be932f9
 
 
 var destinoh1 = document.querySelector(".textobuscado");
-var texto = '<h1>'+"Resultados para: "+search +'</h1>'
+var texto = '<h1>'+"Resultados para: "+ search +'</h1>'
   destinoh1.innerHTML += texto
 
 var destinoprecarga = document.querySelector(".search");
