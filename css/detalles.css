@@ -29,7 +29,11 @@ align-items: center;
 
 .botones {
 left: -20px;
+<<<<<<< HEAD
 margin-right: 30px;
+=======
+
+>>>>>>> f8e908e094dc536caabec0d49206a83fe3bfba49
 display:flex;
 background-color: white;
 overflow: hidden;
@@ -37,9 +41,6 @@ z-index: 999;
 justify-content: space-between;
 }
 
-.botones {
-left: -20px;
-}
 
 .buscador{
 position: relative;
@@ -94,10 +95,13 @@ font-size: 30px;
 padding: 172px;
 }
 
-=======
+.botonlindo {
+  left: -20px;
+
 }
 
->>>>>>> 936d6d62705e7ebb89661001278d888f85bb5c06
+
+
 .container {
 width: 100%;
 display: block;
