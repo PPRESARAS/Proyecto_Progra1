@@ -50,16 +50,12 @@ form.onsubmit = function(validar) {
     console.log(selectIncluir.selectedIndex);
   return true;
   }
-  // else {
-  // }
 
   form.onsubmit = function() {}
 }
-// para el order, hacer url search param, ubicarlo y fetch
 
 var query = new URLSearchParams(location.search)
 
-// HACERLO CON TODAS LAS COSAS DEL FORM
 var generoAIncluir = query.get('generoIncluir')
 var generoAExcluir = query.get('generoExcluir')
 var ordenarPor = query.get('orden')
@@ -111,10 +107,3 @@ fetch(urlA)
 
     }
   });
-
-
-
-  // var busqueda = '<li class="liBuscador uk-transition-toggle">'
-  // busqueda += '<img src="'+ posterURL + myJson.results[i].poster_path+'" alt="" class="posterBusqueda uk-transition-scale-up">'
-  // busqueda += '<div class="uk-position-center uk-panel divaBuscador"><a class="aBuscador uk-transition-scale-up" href="detalles.html?id='+ myJson.results[i].id+'">'+myJson.results[i].name +'</a></div>'
-  // busqueda += '</li>'

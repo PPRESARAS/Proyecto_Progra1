@@ -13,11 +13,6 @@ var destinoprecarga = document.querySelector(".search");
 destinoprecarga.value = search
 
 
-// var barraborrar = document.querySelector(".form-groupSearch")
-// var barraborrada = barraborrar.children;
-// var borrada = barraborrada[2]
-// barraborrar.removeChild(borrada)
-
 
 fetch(url)
   .then(function(respuesta){
@@ -59,7 +54,7 @@ fetch(url)
 /*document.querySelector("textobuscado").onsubmit = function (e) {
   var busco =document.buscar.buscador.value;
   console.log(busco);
-  
+
   if(busco.length <==3) {
     e.preventDefault ()
     UIkit.notification ({message: "Ingrese mas de 3 caracteres", status: 'warning',
