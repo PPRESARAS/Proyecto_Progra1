@@ -1,287 +1,251 @@
 body{
- background-color: #081C24;
-
- height: 100%
+background-color: #081C24;
+height: 100%
 }
 /*cabecera*/
 
 .cabecera {
- width: 100%;
- padding: 0px;
- margin: 1px;
- display:flex;
- background-color: white;
- overflow: hidden;
- z-index: 999;
- justify-content: space-between;
+width: 100%;
+padding: 0px;
+margin: 1px;
+display:flex;
+background-color: white;
+overflow: hidden;
+z-index: 999;
+justify-content: space-between;
 }
 
 .botones {
- left: -20px;
+left: -20px;
 }
-
 
 .buscador{
 position: relative;
 top: 60px;
-
 }
 
 .casa {
- position: relative;
- top: 60px;
+position: relative;
+top: 60px;
 }
+
 .headerul{
- background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );
- display: flex;
- width: 100%;
- height: 100%;
- margin: 0px;
- position: relative;
- justify-content: space-between;
- align-items: center;
+background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );
+display: flex;
+width: 100%;
+height: 100%;
+margin: 0px;
+position: relative;
+justify-content: space-between;
+align-items: center;
 }
 
 .logo{
- width: 170px;
- height: 170px;
- border-radius: 100px;
+width: 170px;
+height: 170px;
+border-radius: 100px;
 }
 
 .form-groupSearch{
- width: 110%;
+width: 110%;
 }
 
 .buscadorheader{
-
- width: 40%;
+width: 40%;
 }
 
 .form-control{
- width: 90%;
- background-color: none;
- height: 50px;
- border-radius: 25px;
+width: 90%;
+background-color: none;
+height: 50px;
+border-radius: 25px;
 }
 
-
 .container {
- width: 100%;
+width: 100%;
 display: block;
 }
 /*hasta aca header*/
 
-
+/* main */
 .div poster {
- display: block;
-   box-sizing: border-box;
-   width: 300px;
-   height: 450px;
-   position: relative;
-   z-index: 2;
-   border-width: 0px;
-   border-radius: 4px;
-   overflow: hidden;
-   box-shadow: 0 0 4px rgba(0,0,0,0.2);
+display: block;
+box-sizing: border-box;
+width: 300px;
+height: 450px;
+position: relative;
+z-index: 2;
+border-width: 0px;
+border-radius: 4px;
+overflow: hidden;
+box-shadow: 0 0 4px rgba(0,0,0,0.2);
 }
 
 .poster{
- opacity: 1 !important;
+opacity: 1 !important;
 }
 
-
 .relacionSerie{
- margin: 10px;
+margin: 10px;
 }
 
 .relacion{
- width: 90%;
+width: 90%;
 }
 
 .relacionSerie:hover{
- display: flex;
- justify-content: center;
- align-items: center;
- position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
 }
-.relacionSerie:hover .link{
- width: 100%;
- height:100%;
- z-index: 10;
- background-color: rgba(1, 0, 0, 0.5);
- position: absolute;
- display: flex;
- justify-content: center;
- align-items: center;
-}
-.flechita {
-  z-index: 1000000000000;
-  position: absolute;
 
+.relacionSerie:hover .link{
+width: 100%;
+height:100%;
+z-index: 10;
+background-color: rgba(1, 0, 0, 0.5);
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.flechita {
+z-index: 1000000000000;
+position: absolute;
 }
 
 
 .detalles{
- display: flex;
- flex-wrap: wrap;
- flex-direction: row;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
 justify-content: space-between;
-
 }
 
 .info
 {
- display: flex;
- flex-direction: column;
- width: 65%;
- height: 50%;
- justify-content: center;
+display: flex;
+flex-direction: column;
+width: 65%;
+height: 50%;
+justify-content: center;
 }
 
 .overview {
-
- position: relative;
- justify-content: center;
-
+position: relative;
+justify-content: center;
 }
 
 .estreno {
 position: relative;
 justify-content: space-between;
-
 }
 
 
 .imagenPeli{
-
 position: relative;
-
 box-sizing: border-box;
 width: 30%;
-
-
 }
-
 
 .lenguaje{
 position: relative;
 }
 
-
 .nombre{
 position: relative;
 font-style: italic;
 font-size: 30px;
-
 }
 
 
 .trailer {
- position: relative;
-
-
+position: relative;
 }
 
-
-.detalle{position: relative;
-
+.detalle{
+position: relative;
 }
 
-.idioma{position: relative;
-
+.idioma{
+position: relative;
 }
-.titulo {position: relative;
 
+.titulo {
+position: relative;
 }
 
 .genders {
- position: relative;
+position: relative;
 }
 
 .uk-h3, h3 {
-   font-size: 3.5rem;
-   line-height: 1.4;
-   color: white;
+font-size: 3.5rem;
+line-height: 1.4;
+color: white;
 }
 
-
 .relacionadas {
- display: none;
- width: 90%;
- justify-content: center;
+display: none;
+width: 90%;
+justify-content: center;
 border-radius: 1px;
 position: relative;
 }
 
-
 .show{
- display: block;
+display: block;
+}
 
-}
 .botonchoto {
- color: red;
+color: red;
 }
+
 .botonbueno{
- color: red;
+color: red;
 }
 
 .pagina {
- font-size: xx-large;
- color: antiquewhite;
- text-decoration:underline;
+font-size: xx-large;
+color: antiquewhite;
+text-decoration:underline;
 }
-
-
 /*hasta aca el body */
-
-
-
-
-
-
-
-
-
-
-
 
 /*footer*/
 .Piedepagina{
-  display: flex;
-  flex-direction: row;
-  border-top: 1px solid gainsboro;
+display: flex;
+flex-direction: row;
+border-top: 1px solid gainsboro;
 text-align: center;
 height: 200px;
 background-color: white;
 }
 
-
 .grupo {
 margin-top: 2%;
 color: white;
 font-size: 10px;
-
 }
 .logoTmdb{
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  width: 80%
+display: flex;
+flex-wrap: wrap;
+position: relative;
+width: 80%
 }
 
 .logoTmdb img{
-  margin-top: 5%;
-  position: sticky;
-  height: 140px;
-  width: 290px;
-  left: 70%;
-  top: 25%;
+margin-top: 5%;
+position: sticky;
+height: 140px;
+width: 290px;
+left: 70%;
+top: 25%;
 }
 
-
-
-
-
+/* media queries */
 @media (min-width: 451px) and (max-width: 750px){
   .serie {
     width:30%;
@@ -292,7 +256,6 @@ font-size: 10px;
   .titulin{
     font-size: 30px;
   }
-
 }
 
 @media (max-width: 550px) {
@@ -312,10 +275,9 @@ font-size: 10px;
   }
   .logoTmdb img{
     width: 110px;
-      height: 55px;
-      left: 60%;
+    height: 55px;
+    left: 60%;
   }
-
   h2{
     font-size: 10px !important;
   }
