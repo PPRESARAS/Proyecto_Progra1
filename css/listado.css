@@ -1,7 +1,6 @@
- body{
-  background-color: #081C24;
-
-  height: 100%
+body{
+background-color: #081C24;
+height: 100%
 }
 /*cabecera*/
 
@@ -9,11 +8,25 @@
 width: 100%;
 padding: 0px;
 margin: 1px;
-display: flex;
+display:flex;
 background-color: white;
 overflow: hidden;
 z-index: 999;
-margin-bottom: 50px;
+justify-content: space-between;
+}
+
+.botones {
+left: -20px;
+}
+
+.buscador{
+position: relative;
+top: 60px;
+}
+
+.casa {
+position: relative;
+top: 60px;
 }
 
 .headerul{
@@ -25,10 +38,6 @@ margin: 0px;
 position: relative;
 justify-content: space-between;
 align-items: center;
-}
-
-.botones {
-left: -20px;
 }
 
 .logo{
@@ -57,10 +66,6 @@ color: white;
 font-size: 30px;
 }
 
-.main {
-padding: 172px;
-}
-
 .container {
 width: 100%;
 display: block;
@@ -72,7 +77,9 @@ color: red;
 text-align: center;
 text-decoration: none;
 }
+/*hasta aca header*/
 
+<<<<<<< HEAD
 /*hasta aca el header*/
 
 
@@ -80,68 +87,56 @@ text-decoration: none;
 
 
 
+=======
+/* main */
+>>>>>>> 936d6d62705e7ebb89661001278d888f85bb5c06
 .div poster {
-  display: block;
-    box-sizing: border-box;
-    width: 300px;
-    height: 450px;
-    position: relative;
-    z-index: 2;
-    border-width: 0px;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+display: block;
+box-sizing: border-box;
+width: 300px;
+height: 450px;
+position: relative;
+z-index: 2;
+border-width: 0px;
+border-radius: 4px;
+overflow: hidden;
+box-shadow: 0 0 4px rgba(0,0,0,0.2);
 }
 
 .poster{
-  opacity: 1 !important;
+opacity: 1 !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 /*footer*/
 .Piedepagina{
-  display: flex;
-  flex-direction: row;
-  border-top: 1px solid gainsboro;
+display: flex;
+flex-direction: row;
+border-top: 1px solid gainsboro;
 text-align: center;
 height: 200px;
 background-color: white;
 }
 
-
 .grupo {
 margin-top: 2%;
 color: white;
 font-size: 10px;
-
 }
+
 .logoTmdb{
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  width: 80%
+display: flex;
+flex-wrap: wrap;
+position: relative;
+width: 80%
 }
 
 .logoTmdb img{
-  margin-top: 5%;
-  position: sticky;
-  height: 140px;
-  width: 290px;
-  left: 70%;
-  top: 25%;
+margin-top: 5%;
+position: sticky;
+height: 140px;
+width: 290px;
+left: 70%;
+top: 25%;
 }

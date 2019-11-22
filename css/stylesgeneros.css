@@ -214,6 +214,18 @@ top: 31px;
     width:30%;
   }
 }
+@media (min-width: 450px) and (max-width: 1223px)  {
+    .nombre{
+      font-size: 20px !important;
+    }
+}
+
+@media (max-width: 830px) {
+  .nombre{
+    font-size: 16px !important;
+  }
+
+}
 
 @media (max-width: 790px) {
   .titulin{
