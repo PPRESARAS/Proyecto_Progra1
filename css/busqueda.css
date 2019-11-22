@@ -12,6 +12,7 @@ display: flex;
 background-color: white;
 overflow: hidden;
 z-index: 999;
+margin-bottom: 20px;
 }
 
 .headerul{
