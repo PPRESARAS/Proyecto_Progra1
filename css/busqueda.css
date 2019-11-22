@@ -108,6 +108,7 @@ color: white;
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
+margin-top: 20px;
 }
 
 .liBuscador{
@@ -185,8 +186,4 @@ width: 230px;
 position: relative;
 left: 850px;
 top: 31px;
-}
-.resultadoBusqueda {
-display: flex;
-flex-wrap: wrap;
 }
