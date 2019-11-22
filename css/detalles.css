@@ -8,6 +8,28 @@ height: 100%
 width: 100%;
 padding: 0px;
 margin: 1px;
+<<<<<<< HEAD
+display: flex;
+background-color: white;
+overflow: hidden;
+z-index: 999;
+margin-bottom: 50px;
+}
+
+.headerul{
+background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );
+display: flex;
+width: 100%;
+height: 100%;
+margin: 0px;
+position: relative;
+justify-content: space-between;
+align-items: center;
+}
+
+.botones {
+left: -20px;
+=======
 display:flex;
 background-color: white;
 overflow: hidden;
@@ -38,6 +60,7 @@ margin: 0px;
 position: relative;
 justify-content: space-between;
 align-items: center;
+>>>>>>> 936d6d62705e7ebb89661001278d888f85bb5c06
 }
 
 .logo{
@@ -59,11 +82,32 @@ width: 90%;
 background-color: none;
 height: 50px;
 border-radius: 25px;
+<<<<<<< HEAD
 }
 
+#icono{
+color: white;
+font-size: 30px;
+}
+
+.main {
+padding: 172px;
+}
+
+=======
+}
+
+>>>>>>> 936d6d62705e7ebb89661001278d888f85bb5c06
 .container {
 width: 100%;
 display: block;
+}
+
+.headerul a {
+font-style: italic;
+color: red;
+text-align: center;
+text-decoration: none;
 }
 /*hasta aca header*/
 
@@ -247,8 +291,9 @@ top: 25%;
 
 /* media queries */
 @media (min-width: 451px) and (max-width: 750px){
-  .serie {
+  .detalles {
     width:30%;
+
   }
 }
 
@@ -289,5 +334,6 @@ top: 25%;
     font-size: 10px !important;
     text-align: center !important;
     padding: 0px !important;
+
   }
 }
