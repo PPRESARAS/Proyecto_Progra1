@@ -10,18 +10,15 @@ body{
  padding: 0px;
  margin: 1px;
  display:flex;
-     background-color: white;
-   overflow: hidden;
-   z-index: 999;
-
-
-justify-content: space-between;
+ background-color: white;
+ overflow: hidden;
+ z-index: 999;
+ justify-content: space-between;
 }
 
 .botones {
  left: -20px;
 }
-
 
 
 .buscador{
@@ -66,17 +63,7 @@ top: 60px;
  height: 50px;
  border-radius: 25px;
 }
-#icono{
- color: white;
- font-size: 30px;
-}
 
-.generos{
-
-}
-.main {
-
-}
 
 .container {
  width: 100%;
@@ -84,13 +71,6 @@ display: block;
 }
 /*hasta aca header*/
 
-.headerul a {
-font-style: italic;
-color: red;
-text-align: center;
-text-decoration: none;
-
-}
 
 
 

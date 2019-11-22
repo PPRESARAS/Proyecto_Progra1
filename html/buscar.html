@@ -11,7 +11,9 @@
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
 <script src="https://kit.fontawesome.com/0fb732c451.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+
+
+<body>
 
   <header class="cabecera">
 
@@ -22,8 +24,6 @@
       <form class="buscadorheader" action="searchbar.html" method="get">
         <div class="form-groupSearch">
           <input type="search" class="form-control" name="search" placeholder="  Buscar">
-          <span uk-icon="search"></span>
-          <i id="icono" class="fas fa-search"></i>
         </div>
       </form>
 
@@ -38,7 +38,7 @@
             </ul>
           </div>
 
-        </div>
+      </div>
 
     </ul>
 
@@ -48,23 +48,23 @@
 
 <main>
   <form class="formulario" name="formulario" action="buscar.html" method="get">
-<br>
+
 
     <label for="generos" class="texto">Generos que desea buscar...</label>
-<br>
+
 
       <select class="incluir" name="generoIncluir" id="generoA">
         <option value="">GENEROS:</option>
       </select>
-<br>
+
     <label for="generos" class="texto">Generos que desea excluir...</label>
-<br>
+
       <select class="excluir" name="generoExcluir" id="generoA">
         <option value="">GENEROS:</option>
       </select>
-<br>
+
     <label for="ordenarPor" class="texto">Ordenar series por...</label>
-<br>
+
       <select class="ordenar" name="orden" id="generoA">
         <option value="" class="option">ORDENAR POR:</option>
           <option value="popularity.desc">Las mas populares</option>
@@ -74,18 +74,17 @@
           <option value="first_air_date.desc">Mas recientes estrenos</option>
           <option value="first_air_date.asc">Mas antiguos estrenos</option>
       </select>
-<br>
+
     <label for="" class="texto">Año de estreno...</label>
-<br>
+
       <select class="year" name="year" id="generoA">
         <option value="">AÑO:</option>
       </select>
-<br>
+
       <div uk-margin>
         <button type="submit" class="enviar uk-button uk-button-default"><p>Buscar</p></button>
       </div>
 
-<br>
 
 
       <div class="textoBuscado">
@@ -105,10 +104,6 @@
       </div>
 
   </form>
-
-      <div class="volver">
-        <a class="volverABuscador"href="#top">Volver a buscar</a>
-      </div>
 
   </main>
 

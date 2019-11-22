@@ -13,49 +13,32 @@
 <script src="https://kit.fontawesome.com/0fb732c451.js" crossorigin="anonymous"></script>
   </head>
   <body>
-  <div class="container">
 
+<div class="container">
 
     <header class="cabecera">
       <ul class="headerul">
         <a src="logotipo" href="index.html"> <img  src="../imagenes/logo.png" alt="logotipo" class="logo"></a>
-
         <form class="buscadorheader" action="searchbar.html" method="get">
           <div class="form-groupSearch">
             <input type="search" class="form-control" name="search" placeholder="  Buscar" >
-
-                    </div>
+          </div>
         </form>
 
-
-
-
-            <div class="uk-inline boundary botones">
-                <button class="uk-button uk-button-default" type="button">Menu</button>
-                <div uk-dropdown="pos: left-top" style="position:fixed;">
-                    <ul class="uk-nav uk-dropdown-nav">
-                        <li class="uk-active miLi"><a href="buscar.html">Filtros</a></li>
-                        <li miLi><a "uk-button uk-button-default" href="listado.html" id="generos">Generos</a>
-                        <li class="uk-nav-divider miLi"></li>
-                    </ul>
-                </div>
+        <div class="uk-inline boundary botones">
+          <button class="uk-button uk-button-default" type="button">Menu</button>
+            <div uk-dropdown="pos: left-top" style="position:fixed;">
+              <ul class="uk-nav uk-dropdown-nav">
+                  <li class="uk-active miLi"><a href="buscar.html">Filtros</a></li>
+                  <li miLi><a "uk-button uk-button-default" href="listado.html" id="generos">Generos</a>
+                  <li class="uk-nav-divider miLi"></li>
+              </ul>
             </div>
-
+        </div>
       </ul>
-
-  		</header>
-<main>
-
-
-
-
-
-
-
-
-
+  	</header>
+    <main>
       <section class= "series">
-
         <div class="titulo">
           <p>Listado de series con mayor puntaje</p>
         </div>
@@ -67,6 +50,7 @@
           <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
         </div>
 
+
         <div class="titulo">
           <p>Listado de las series mas populares</p>
         </div>
@@ -77,7 +61,8 @@
           <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
           <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
         </div>
-          <br>
+
+
         <div class="titulo">
             <p>Listado de series que estan al aire hoy</p>
         </div>
@@ -88,7 +73,9 @@
           <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
           <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"> </a>
         </div>
+
       </section>
+
     </main>
 
         <footer  class="Piedepagina">
@@ -106,8 +93,7 @@
 
 
           <div class="logoTmdb">
-
-              <img src="../imagenes/logodb.png" alt=""    href="#top" uk-scroll>
+            <img src="../imagenes/logodb.png" alt=""    href="#top" uk-scroll>
           </div>
 
 

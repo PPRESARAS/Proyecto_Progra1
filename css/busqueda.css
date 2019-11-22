@@ -31,16 +31,11 @@ height: 170px;
 border-radius: 100px;
 }
 
-.form-groupSearch{
-width: 110%;
-}
-
 .buscadorheader{
 width: 40%;
 }
-
-.botones {
-left: -20px;
+.form-groupSearch{
+width: 110%;
 }
 
 .form-control{
@@ -50,26 +45,21 @@ height: 50px;
 border-radius: 25px;
 }
 
-#icono{
-color: white;
-font-size: 30px;
-}
-
-.headerul a {
-font-style: italic;
-color: red;
-text-align: center;
-text-decoration: none;
+.botones {
+left: -20px;
 }
 
 /*hasta aca header*/
-
+/* main */
 main{
 width: 100%;
 }
 
 .formulario{
+display: flex;
+flex-direction: column;
 text-align: center;
+align-items: center;
 }
 
 #generoA{
@@ -89,8 +79,9 @@ font-size: 25px;
 }
 
 .enviar{
-border-radius: 19%;
-width: 10%;
+display: flex;
+align-items: center;
+border-radius: 19px !important;
 font-weight: bold;
 position: relative;
 top: 10px;
@@ -101,7 +92,6 @@ background-color: black;
 font-size: 25px;
 position: relative;
 top: 9px;
-right: 12px;
 color: white;
 }
 
