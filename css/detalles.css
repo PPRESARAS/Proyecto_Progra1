@@ -1,0 +1,340 @@
+body{
+ background-color: #081C24;
+
+ height: 100%
+}
+/*cabezera*/
+
+.cabecera {
+ width: 100%;
+ padding: 0px;
+ margin: 1px;
+ display:flex;
+     background-color: white;
+   overflow: hidden;
+   z-index: 999;
+
+
+justify-content: space-between;
+}
+
+.botones {
+ left: -20px;
+}
+
+
+
+.buscador{
+position: relative;
+top: 60px;
+
+}
+
+.casa {
+ position: relative;
+ top: 60px;
+}
+.headerul{
+ background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );
+ display: flex;
+ width: 100%;
+ height: 100%;
+ margin: 0px;
+ position: relative;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.logo{
+ width: 170px;
+ height: 170px;
+ border-radius: 100px;
+}
+
+.form-groupSearch{
+ width: 110%;
+}
+
+.buscadorheader{
+
+ width: 40%;
+}
+
+.form-control{
+ width: 90%;
+ background-color: none;
+ height: 50px;
+ border-radius: 25px;
+}
+#icono{
+ color: white;
+ font-size: 30px;
+}
+
+.generos{
+
+}
+.main {
+
+}
+
+.container {
+ width: 100%;
+display: block;
+}
+/*hasta aca header*/
+
+.headerul a {
+font-style: italic;
+color: red;
+text-align: center;
+text-decoration: none;
+
+}
+
+
+
+.series {
+
+ position: relative;
+ justify-content: space-between;
+ flex-direction: column;
+}
+
+.series p {
+color: white;
+}
+
+
+.popular {
+
+ position: relative;
+justify-content: space-between;
+flex-direction: row;
+
+}
+
+.alAire {
+
+ position: relative;
+justify-content: space-between;
+flex-direction: row;
+
+}
+
+
+
+
+.div poster {
+ display: block;
+   box-sizing: border-box;
+   width: 300px;
+   height: 450px;
+   position: relative;
+   z-index: 2;
+   border-width: 0px;
+   border-radius: 4px;
+   overflow: hidden;
+   box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+.poster{
+ opacity: 1 !important;
+}
+
+
+.relacionSerie{
+ margin: 10px;
+}
+
+.relacion{
+ width: 90%;
+}
+
+.relacionSerie:hover{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+}
+.relacionSerie:hover .link{
+ width: 100%;
+ height:100%;
+ z-index: 10;
+ background-color: rgba(1, 0, 0, 0.5);
+ position: absolute;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.Piedepagina{
+ display: flex;
+ flex-direction: row;
+ border-top: 1px solid gainsboro;
+ text-align: center;
+ height: 200px;
+ background-color: white;
+ margin-top: 30px
+
+
+
+
+}
+
+.grupo {
+color: white;
+font-size: 10px;
+
+}
+.logoTmdb{
+ display: flex;
+ flex-wrap: wrap;
+ position: relative;
+}
+.logoTmdb img{
+ height: 100px;
+ width: 230px;
+ position: relative;
+ left: 850px;
+ top: 31px;
+}
+
+
+
+
+
+
+
+
+.flechita {
+  z-index: 1000000000000;
+  position: absolute;
+
+}
+
+
+.detalles{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+justify-content: space-between;
+
+}
+
+.info
+{
+ display: flex;
+ flex-direction: column;
+ width: 65%;
+ height: 50%;
+ justify-content: center;
+}
+
+.overview {
+
+ position: relative;
+ justify-content: center;
+
+}
+
+.estreno {
+position: relative;
+justify-content: space-between;
+
+}
+
+
+.imagenPeli{
+
+position: relative;
+
+box-sizing: border-box;
+width: 30%;
+
+
+}
+
+
+.lenguaje{
+position: relative;
+}
+
+
+.nombre{
+position: relative;
+font-style: italic;
+font-size: 30px;
+
+}
+
+
+.trailer {
+ position: relative;
+
+
+}
+
+
+.detalle{position: relative;
+
+}
+
+.idioma{position: relative;
+
+}
+.titulo {position: relative;
+
+}
+
+.genders {
+ position: relative;
+}
+
+.uk-h3, h3 {
+   font-size: 3.5rem;
+   line-height: 1.4;
+   color: white;
+}
+
+
+.relacionadas {
+ display: none;
+ width: 90%;
+ justify-content: center;
+border-radius: 1px;
+position: relative;
+}
+
+
+.show{
+ display: block;
+
+}
+.botonchoto {
+ color: red;
+}
+.botonbueno{
+ color: red;
+}
+
+.pagina {
+ font-size: xx-large;
+ color: antiquewhite;
+ text-decoration:underline;
+}
