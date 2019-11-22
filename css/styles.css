@@ -1,65 +1,58 @@
 body{
-  background-color: #081C24;
-  width: 100%;
-  height: 100%;
+background-color: #081C24;
+width: 100%;
+height: 100%;
 }
 /*cabezera*/
 
 .cabecera {
-  width: 100%;
-  padding: 0px;
-  margin: 1px;
-  display:flex;
-      background-color: white;
-    overflow: hidden;
-    z-index: 999;
-
-    position: fixed;
-
+width: 100%;
+padding: 0px;
+margin: 1px;
+display:flex;
+background-color: white;
+overflow: hidden;
+z-index: 999;
+position: fixed;
 }
-.headerul{
-  background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );
-  display: flex;
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 999;
 
+.headerul{
+background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );
+display: flex;
+width: 100%;
+height: 100%;
+margin: 0px;
+position: relative;
+justify-content: space-between;
+align-items: center;
+z-index: 999;
 }
 
 .logo{
-  width: 170px;
-  height: 170px;
-  border-radius: 100px;
+width: 170px;
+height: 170px;
+border-radius: 100px;
 }
 
 .form-groupSearch{
-  width: 110%;
+width: 110%;
 }
 
 .buscadorheader{
-
-  width: 40%;
+width: 40%;
 }
 
 .form-control{
-  width: 90%;
-  background-color: none;
-  height: 50px;
-  border-radius: 25px;
+width: 90%;
+background-color: none;
+height: 50px;
+border-radius: 25px;
 }
+
 #icono{
-  color: white;
-  font-size: 30px;
+color: white;
+font-size: 30px;
 }
-
-#generos{
-
-}
-
 
 .container {
   width: 100%;
@@ -72,39 +65,18 @@ font-style: italic;
 color: red;
 text-align: center;
 text-decoration: none;
-
-}
-ul.ul-nav{
-
 }
 
 main{
-  padding-top: 80px;
-  width: 100%;
+padding-top: 80px;
+width: 100%;
 }
-/* #slider{
-  width: 100%;
-  height: 100%;
-} */
-
-
-/*section.series div li:hover {
-  background: black;
-  transition: background 0.5s linear;
-  opacity: 0.6;
-  text-align: center;
-  justify-content: center;
-}*/
-
-/* #slider populares {
-  display: flex;
-  animation: ease-in-out 2s infinite normal;
-} */
 
 .titulo {
 background: rgba(255,255,255,.08);
 width: 100% ;
 }
+
 .margen {
 margin-bottom: 20px;
 }
@@ -121,14 +93,12 @@ flex-direction: column;
 margin: 90px;
 }
 
-
 .series p {
 color:  antiquewhite;
 text-align: center;
 font-size: 25px;
 text-decoration: underline;
 }
-
 
 .popular {
 position: relative;
@@ -142,12 +112,9 @@ justify-content: space-between;
 flex-direction: row;
 }
 
-
 .poster{
 opacity: 1 !important;
 }
-
-
 
 .link{
 height: 100%;
@@ -156,9 +123,8 @@ opacity: 0;
 }
 
 .unidad{
-  margin: 10px;
+margin: 10px;
 }
-
 
 .unidad:hover a{
 display: flex;
@@ -190,20 +156,15 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
-
 }
-
-
-
-
 
 
 
 /*footer*/
 .Piedepagina{
-  display: flex;
-  flex-direction: row;
-  border-top: 1px solid gainsboro;
+display: flex;
+flex-direction: row;
+border-top: 1px solid gainsboro;
 text-align: center;
 height: 200px;
 background-color: white;
@@ -215,38 +176,29 @@ font-size: 10px;
 }
 
 .logoTmdb{
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
+display: flex;
+flex-wrap: wrap;
+position: relative;
 }
 
 .logoTmdb img{
-  height: 100px;
-  width: 230px;
-  position: relative;
-  left: 850px;
-  top: 31px;
+height: 100px;
+width: 230px;
+position: relative;
+left: 850px;
+top: 31px;
 }
+
 .miLi{
-  z-index: 500000;
+z-index: 500000;
 }
 
 .bordes {
-  justify-content: space-between;
-  padding: 1px;
-  width: 94%;
-
+justify-content: space-between;
+padding: 1px;
+width: 94%;
 }
 
 .uk-slider-items:not(.uk-grid){
-  justify-content: space-between;
+justify-content: space-between;
 }
-@media only screen and (min-width: 420px) {
-  body {
-width: 100%;
-  }
-  @media only screen and (max-width: 768px) {
-    body {
-      width: 100%;
-
-    }
