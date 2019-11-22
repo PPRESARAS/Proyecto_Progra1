@@ -208,3 +208,65 @@ width: 94%;
 .uk-slider-items:not(.uk-grid){
 justify-content: space-between;
 }
+
+
+
+
+
+/*Media Queries Tablets*/
+@media (max-width: 646px) {
+ .series{
+    margin: 1%;
+    margin-top: 25%;
+  }
+
+}
+@media (min-width: 450px) and (max-width: 1223px)  {
+    .nombre{
+      font-size: 20px !important;
+    }
+}
+
+@media (max-width: 830px) {
+  .nombre{
+    font-size: 16px !important;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+  .logo{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 450px) {
+  .logo{
+    width: 80px;
+    height: 80px;
+  }
+  .serie {
+    width: 100% !important;
+  }
+  .logoTmdb img{
+    width: 110px;
+      height: 55px;
+      left: 60%;
+  }
+
+  h2{
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width:400px) {
+  .botonlindo{
+    width: 50px;
+    font-size: 10px !important;
+    text-align: center !important;
+    padding: 0px !important;
+  }
+
+}
