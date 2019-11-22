@@ -12,8 +12,8 @@ display: flex;
 background-color: white;
 overflow: hidden;
 z-index: 999;
-margin-bottom: 50px;
 }
+
 .headerul{
 background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );
 display: flex;
@@ -40,7 +40,7 @@ width: 40%;
 }
 
 .botones {
-  left: -20px;
+left: -20px;
 }
 
 .form-control{
@@ -55,17 +55,6 @@ color: white;
 font-size: 30px;
 }
 
-main{
-padding-top: 80px;
-width: 100%;
-}
-
-.container {
-width: 100%;
-display: block;
-}
-/*hasta aca header*/
-
 .headerul a {
 font-style: italic;
 color: red;
@@ -73,78 +62,97 @@ text-align: center;
 text-decoration: none;
 }
 
-#generoA{
-width: 15%;
-}
+/*hasta aca header*/
 
-.enviar{
-border-radius: 10%;
-width: 5%;
-font-weight: bold;
-font-size: 15px;
-}
-
-.series {
-position: relative;
-justify-content: space-between;
-flex-direction: column;
-}
-
-.series p {
-color: white;
-}
-
-.popular {
-position: relative;
-justify-content: space-between;
-flex-direction: row;
-}
-
-.alAire {
-position: relative;
-justify-content: space-between;
-flex-direction: row;
+main{
+width: 100%;
 }
 
 .formulario{
 text-align: center;
 }
 
+#generoA{
+width: 50%;
+align-items: center;
+height: 30px;
+}
+
+#generoA option {
+text-align: center;
+}
+
+.texto{
+color: white;
+text-align: center;
+font-size: 25px;
+}
+
+.enviar{
+border-radius: 19%;
+width: 10%;
+font-weight: bold;
+position: relative;
+top: 10px;
+background-color: black;
+}
+
+.enviar p{
+font-size: 25px;
+position: relative;
+top: 9px;
+right: 12px;
+color: white;
+}
+
+.textoBuscado h1{
+position: relative;
+top: 20px;
+font-family: 'Open Sans', sans-serif;
+font-weight: bold;
+font-size: 50px;
+color: white;
+}
+
+.contenedoraderesultados{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+}
+
 .liBuscador{
-  display: flex;
-  position: relative;
-  justify-content: center;
-  width: 18%;
-  text-align: center;
-  align-items: center;
-  margin: 10px;
+display: flex;
+position: relative;
+justify-content: center;
+width: 18%;
+text-align: center;
+align-items: center;
+margin: 10px;
 }
 
 .posterBusqueda {
-  opacity: 1 !important;
+opacity: 1 !important;
 }
 
-.liBuscador:hover .divaBuscador{
-  height: 100%;
-  width: 100%;
-  background-color: rgba(30, 30, 30, 0.5);
+.fail{
+opacity: 1 !important;
+height: 388px;
 }
 
 .liBuscador:hover a{
-  text-decoration: underline;
-  color: rgba(255, 255, 255, 1);
-  opacity: 1;
-
+text-decoration: underline;
+color: rgba(255, 255, 255, 0.8);
+opacity: 1;
 }
 
 .divaBuscador{
-  display: flex;
-  position: absolute;
-  top:0;
-  left: 0;
-  justify-content: center;
-  z-index: 10;
-  align-items: center;
+display: flex;
+position: absolute;
+top:0;
+left: 0;
+justify-content: center;
+z-index: 10;
+align-items: center;
 }
 
 .resultados {
@@ -153,47 +161,9 @@ justify-content: space-between;
 flex-direction: row;
 }
 
-.bordes {
-  justify-content: space-between;
-  padding: 1px;
-  width: 94%;
-}
-
 .uk-slider-items:not(.uk-grid){
-  justify-content: space-between;
-}
-
-.series {
-display: flex;
-position: relative;
 justify-content: space-between;
-flex-direction: column;
-margin: 90px;
 }
-
-.series p {
-color:  antiquewhite;
-text-align: center;
-font-size: 25px;
-text-decoration: underline;
-}
-
-.margen {
-margin-bottom: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -225,4 +195,8 @@ width: 230px;
 position: relative;
 left: 850px;
 top: 31px;
+}
+.resultadoBusqueda {
+display: flex;
+flex-wrap: wrap;
 }

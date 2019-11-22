@@ -90,13 +90,31 @@ fetch(urlA)
       myJson.results[i]
       console.log(myJson.results[i].name)
       console.log(posterURL+myJson.results[i].poster_path)
-      var elementoHTML = document.querySelector('.formulario')
+      var resultadosS = document.querySelector('.contenedoraderesultados')
 
-      var busqueda = '<li class="liBuscador uk-transition-toggle">'
-      busqueda += '<img class="posterBusqueda uk-transition-scale-up"src="'+ posterURL + myJson.results[i].poster_path+'" alt="">'
-      busqueda += '<div class="divaBuscador uk-transition-scale-up"><a class="aBuscador" href="detalles.html?id='+ myJson.results[i].id+'">'+myJson.results[i].name +'</a></div>'
-      busqueda += '</li>'
 
-      elementoHTML.innerHTML += busqueda
+      if (myJson.results[i].poster_path == null){
+      var posterfallo = ""
+      posterfallo += '<li class="uk-transition-toggle liBuscador">'
+      posterfallo += '<img class="fail uk-transition-scale-up" src="../imagenes/fail.jpg" alt="" </a>'
+      resultadosS.innerHTML += posterfallo
+      }
+      else {
+        var busqueda = '<li class="uk-transition-toggle liBuscador">'
+        busqueda+= '<img src="'+posterURL+ myJson.results[i].poster_path+'" alt="" class="posterBusqueda uk-transition-scale-up">'
+        busqueda += '<div class="uk-position-center uk-panel divaBuscador"><a href="detalles.html?id='+ myJson.results[i].id+'" class="aBuscador uk-transition-scale-up">'+myJson.results[i].name +'</a></div>'
+        busqueda+= '</li>'
+
+
+      resultadosS.innerHTML += busqueda
+      }
+
     }
   });
+
+
+
+  // var busqueda = '<li class="liBuscador uk-transition-toggle">'
+  // busqueda += '<img src="'+ posterURL + myJson.results[i].poster_path+'" alt="" class="posterBusqueda uk-transition-scale-up">'
+  // busqueda += '<div class="uk-position-center uk-panel divaBuscador"><a class="aBuscador uk-transition-scale-up" href="detalles.html?id='+ myJson.results[i].id+'">'+myJson.results[i].name +'</a></div>'
+  // busqueda += '</li>'
