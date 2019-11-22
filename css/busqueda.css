@@ -35,6 +35,7 @@ border-radius: 100px;
 .buscadorheader{
 width: 40%;
 }
+
 .form-groupSearch{
 width: 110%;
 }
@@ -49,8 +50,8 @@ border-radius: 25px;
 .botones {
 left: -20px;
 }
-
 /*hasta aca header*/
+
 /* main */
 main{
 width: 100%;
@@ -156,8 +157,6 @@ flex-direction: row;
 .uk-slider-items:not(.uk-grid){
 justify-content: space-between;
 }
-
-
 
 
 /*footer*/
