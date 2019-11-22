@@ -163,34 +163,22 @@ text-align: center;
 
 /*footer*/
 .Piedepagina{
-display: flex;
-flex-direction: row;
-border-top: 1px solid gainsboro;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid gainsboro;
 text-align: center;
 height: 200px;
 background-color: white;
 }
 
+
 .grupo {
 margin-top: 2%;
 color: white;
 font-size: 10px;
-}
 
+}
 .logoTmdb{
-<<<<<<< HEAD
-display: flex;
-flex-wrap: wrap;
-position: relative;
-}
-
-.logoTmdb img{
-height: 100px;
-width: 230px;
-position: relative;
-left: 850px;
-top: 31px;
-=======
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -205,6 +193,7 @@ top: 31px;
   left: 70%;
   top: 25%;
 }
+
 
 
 /*Media Queries Tablets*/
