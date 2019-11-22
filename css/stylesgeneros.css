@@ -1,211 +1,196 @@
 body{
 background-color: #081C24;
-
-  height: 100%
+height: 100%
 }
 /*cabezera*/
 
 .cabecera {
-  width: 100%;
-  padding: 0px;
-  margin: 1px;
-  display: flex;
-    background-color: white;
-    overflow: hidden;
-    z-index: 999;
-    margin-bottom: 50px;
-
+width: 100%;
+padding: 0px;
+margin: 1px;
+display: flex;
+background-color: white;
+overflow: hidden;
+z-index: 999;
+margin-bottom: 50px;
 }
+
 .headerul{
-  background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );
-  display: flex;
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-}
-.botones {
-  left: -20px;
+background-image: linear-gradient(rgba(255, 170, 85, 0.5); rgba(255, 170, 85, 0) );
+display: flex;
+width: 100%;
+height: 100%;
+margin: 0px;
+position: relative;
+justify-content: space-between;
+align-items: center;
 }
 
+.botones {
+left: -20px;
+}
 
 .logo{
-  width: 170px;
-  height: 170px;
-  border-radius: 100px;
+width: 170px;
+height: 170px;
+border-radius: 100px;
 }
 
 .form-groupSearch{
-  width: 110%;
+width: 110%;
 }
 
 .buscadorheader{
-
-  width: 40%;
+width: 40%;
 }
 
 .form-control{
-  width: 90%;
-  background-color: none;
-  height: 50px;
-  border-radius: 25px;
+width: 90%;
+background-color: none;
+height: 50px;
+border-radius: 25px;
 }
+
 #icono{
-  color: white;
-  font-size: 30px;
+color: white;
+font-size: 30px;
 }
 
-#generos{
-
-}
 .main {
 padding: 172px;
 }
 
 .container {
-  width: 100%;
+width: 100%;
 display: block;
 }
-/*hasta aca header*/
 
 .headerul a {
 font-style: italic;
 color: red;
 text-align: center;
 text-decoration: none;
-
 }
+/*hasta aca header*/
 
+/* main */
 .tituloDelGenero{
-  font-family: 'Open Sans', sans-serif;
-  padding: 15px;
-  font-size: 50px;
-  padding-left: 43px;
+font-family: 'Open Sans', sans-serif;
+padding: 15px;
+font-size: 50px;
+padding-left: 43px;
 }
-
 
 .series {
-
-  position: relative;
-  justify-content: space-between;
-  flex-direction: column;
+position: relative;
+justify-content: space-between;
+flex-direction: column;
 }
 
 .series p {
 color: white;
 }
 
-
 .popular {
 position: relative;
 justify-content: space-between;
 flex-direction: row;
-
 }
 
 .alAire {
 position: relative;
 justify-content: space-between;
 flex-direction: row;
-
 }
 
 .listaDeSeries{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+list-style: none;
 }
 
 .serie{
-  width: 18%;
-  display: flex;
-  position: relative;
-  justify-content: space-around;
-  text-align: center;
-  align-items:center;
-  margin: 10px;
-  background: rgba(255, 0, 0, 0);
-
+width: 18%;
+display: flex;
+position: relative;
+justify-content: space-around;
+text-align: center;
+align-items:center;
+margin: 10px;
+background: rgba(255, 0, 0, 0);
 }
 
-
-
-.serie:hover {
-  iwidth: 22%;
-
-}
 .serie:hover a{
-  text-decoration: underline;
-  color: rgba(255, 255, 255, 1);
-  opacity: 1;
-
+text-decoration: underline;
+color: rgba(255, 255, 255, 1);
+opacity: 1;
 }
 
 .serie:hover .tituloserie{
-  height: 100%;
-  width: 100%;
-  background-color: rgba(30, 30, 30, 0.5);
+height: 100%;
+width: 100%;
+background-color: rgba(30, 30, 30, 0.5);
 }
-
-
 
 .poster{
 opacity: 1 !important;
 }
 
 .tituloserie{
-  display: flex;
-  position: absolute;
-  top:0;
-  left: 0;
-  justify-content: center;
-  z-index: 10;
-  align-items: center;
-  height: 100%;
-  width: 100%;
+display: flex;
+position: absolute;
+top:0;
+left: 0;
+justify-content: center;
+z-index: 10;
+align-items: center;
+height: 100%;
+width: 100%;
 }
 
 .titulo {
-  display: flex;
-  opacity: 0;
-  z-index: 11;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+display: flex;
+opacity: 0;
+z-index: 11;
+height: 100%;
+width: 100%;
+justify-content: center;
+align-items: center;
+text-align: center;
 }
-
-
-
-
-
-
-
-
 
 
 /*footer*/
 .Piedepagina{
-  display: flex;
-  flex-direction: row;
-  border-top: 1px solid gainsboro;
+display: flex;
+flex-direction: row;
+border-top: 1px solid gainsboro;
 text-align: center;
 height: 200px;
 background-color: white;
 }
 
-
 .grupo {
 margin-top: 2%;
 color: white;
 font-size: 10px;
-
 }
+
 .logoTmdb{
+<<<<<<< HEAD
+display: flex;
+flex-wrap: wrap;
+position: relative;
+}
+
+.logoTmdb img{
+height: 100px;
+width: 230px;
+position: relative;
+left: 850px;
+top: 31px;
+=======
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -282,4 +267,5 @@ font-size: 10px;
     text-align: center !important;
     padding: 0px !important;
   }
+>>>>>>> master
 }
