@@ -1,63 +1,60 @@
 main {
-  padding-top: 172px;
+padding-top: 172px;
 }
 
 .resultados{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+list-style: none;
 }
-
 
 .unidad{
-  display: flex;
-  position: relative;
-  justify-content: center;
-  width: 18%;
-  text-align: center;
-  align-items: center;
-  margin: 10px;
+display: flex;
+position: relative;
+justify-content: center;
+width: 18%;
+text-align: center;
+align-items: center;
+margin: 10px;
 }
 
-
 .botones {
-  left: -20px;
+left: -20px;
 }
 
 .tituloserie{
-  display: flex;
-  position: absolute;
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+display: flex;
+position: absolute;
+opacity: 0;
+height: 100%;
+width: 100%;
+justify-content: center;
+align-items: center;
 }
 
 .poster {
-  opacity: 1 !important;
+opacity: 1 !important;
 }
 
 .unidad:hover .contenedortitulo{
-  height: 100%;
-  width: 100%;
-  background-color: rgba(30, 30, 30, 0.5);
+height: 100%;
+width: 100%;
+background-color: rgba(30, 30, 30, 0.5);
 }
 
 .unidad:hover a{
-  text-decoration: underline;
-  color: rgba(255, 255, 255, 1);
-  opacity: 1;
-
+text-decoration: underline;
+color: rgba(255, 255, 255, 1);
+opacity: 1;
 }
 
 .contenedortitulo{
-  display: flex;
-  position: absolute;
-  top:0;
-  left: 0;
-  justify-content: center;
-  z-index: 10;
-  align-items: center;
+display: flex;
+position: absolute;
+top:0;
+left: 0;
+justify-content: center;
+z-index: 10;
+align-items: center;
 }
