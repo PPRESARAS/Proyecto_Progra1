@@ -24,11 +24,6 @@ fetch("https://api.themoviedb.org/3/tv/top_rated?api_key=8eaabce657eccc6be932f97
       contenidoParaInsertar += '</li>'
 
       elementoHTML.innerHTML += contenidoParaInsertar
-//       <li>
-//     <img src="images/slider5.jpg" alt="">
-//     <div class="uk-position-center uk-panel"><h1>10</h1></div>
-// </li>
-
 
       // una vez que me sale el array completo de toda la info , selecciono
       //que es lo que voy a utilizar (en este caso, quiero utilizar los resultados)
@@ -88,6 +83,3 @@ fetch("https://api.themoviedb.org/3/tv/top_rated?api_key=8eaabce657eccc6be932f97
         elementoHTML.innerHTML += insertar2
       }
     });
-
-
-    

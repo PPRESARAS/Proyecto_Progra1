@@ -50,6 +50,8 @@ fetch(url)
 
 
 })
+
+
 //para que cuando busques , si escribis 2 caracteres , arroje error
 /*document.querySelector("textobuscado").onsubmit = function (e) {
   var busco =document.buscar.buscador.value;
