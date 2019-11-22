@@ -6,7 +6,7 @@ var id = searchParams.get("id")
 
 var nombre = searchParams.get("nombre")
 var elemento2 = document.querySelector ('.tituloDelGenero')
-elemento2.innerHTML += "Resultados para: " + nombre;
+elemento2.innerHTML += '<p class="titulin">Resultados para: '+ nombre+'<p>'
 console.log(id);
 console.log(nombre);
 var url = "https://api.themoviedb.org/3/discover/tv?api_key=8eaabce657eccc6be932f97172c1a728&sort_by=popularity.desc&page=1&with_genres=" + id

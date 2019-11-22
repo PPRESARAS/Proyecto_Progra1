@@ -179,20 +179,6 @@ opacity: 1 !important;
   text-align: center;
 }
 
-/*Media Queries Tablets*/
-
-@media (min-width: 451px) and (max-width: 750px){
-  .unidad {
-    width:30%;
-  }
-}
-
-@media (max-width: 450px) {
-  .unidad {
-    width: 100%;
-  }
-}
-
 
 
 
@@ -214,6 +200,7 @@ background-color: white;
 
 
 .grupo {
+margin-top: 2%;
 color: white;
 font-size: 10px;
 
@@ -222,12 +209,65 @@ font-size: 10px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  width: 80%
 }
 
 .logoTmdb img{
-  height: 100px;
-  width: 230px;
-  position: relative;
-  left: 850px;
-  top: 31px;
+  margin-top: 5%;
+  position: sticky;
+  height: 140px;
+  width: 290px;
+  left: 70%;
+  top: 25%;
+}
+
+
+/*Media Queries Tablets*/
+
+@media (min-width: 451px) and (max-width: 750px){
+  .serie {
+    width:30%;
+  }
+}
+
+@media (max-width: 790px) {
+  .titulin{
+    font-size: 30px;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .logo{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 450px) {
+  .logo{
+    width: 80px;
+    height: 80px;
+  }
+  .serie {
+    width: 100% !important;
+  }
+  .logoTmdb img{
+    width: 110px;
+      height: 55px;
+      left: 60%;
+  }
+
+  h2{
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width:400px) {
+  .botonlindo{
+    width: 50px;
+    font-size: 10px !important;
+    text-align: center !important;
+    padding: 0px !important;
+  }
 }
