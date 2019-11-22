@@ -3,7 +3,7 @@ body{
 
  height: 100%
 }
-/*cabezera*/
+/*cabecera*/
 
 .cabecera {
  width: 100%;
@@ -72,39 +72,6 @@ display: block;
 /*hasta aca header*/
 
 
-
-
-.series {
-
- position: relative;
- justify-content: space-between;
- flex-direction: column;
-}
-
-.series p {
-color: white;
-}
-
-
-.popular {
-
- position: relative;
-justify-content: space-between;
-flex-direction: row;
-
-}
-
-.alAire {
-
- position: relative;
-justify-content: space-between;
-flex-direction: row;
-
-}
-
-
-
-
 .div poster {
  display: block;
    box-sizing: border-box;
@@ -147,61 +114,6 @@ flex-direction: row;
  justify-content: center;
  align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*footer*/
-.Piedepagina{
- display: flex;
- flex-direction: row;
- border-top: 1px solid gainsboro;
- text-align: center;
- height: 200px;
- background-color: white;
- margin-top: 30px
-
-
-
-
-}
-
-.grupo {
-color: white;
-font-size: 10px;
-
-}
-.logoTmdb{
- display: flex;
- flex-wrap: wrap;
- position: relative;
-}
-.logoTmdb img{
- height: 100px;
- width: 230px;
- position: relative;
- left: 850px;
- top: 31px;
-}
-
-
-
-
-
-
-
-
 .flechita {
   z-index: 1000000000000;
   position: absolute;
@@ -317,4 +229,51 @@ position: relative;
  font-size: xx-large;
  color: antiquewhite;
  text-decoration:underline;
+}
+
+
+/*hasta aca el body */
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.Piedepagina{
+ display: flex;
+ flex-direction: row;
+ border-top: 1px solid gainsboro;
+ text-align: center;
+ height: 200px;
+ background-color: white;
+ margin-top: 30px
+
+
+
+
+}
+
+.grupo {
+color: white;
+font-size: 10px;
+
+}
+.logoTmdb{
+ display: flex;
+ flex-wrap: wrap;
+ position: relative;
+}
+.logoTmdb img{
+ height: 100px;
+ width: 230px;
+ position: relative;
+ left: 850px;
+ top: 31px;
 }
