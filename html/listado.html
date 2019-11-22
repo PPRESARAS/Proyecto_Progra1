@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/listado.css">
     <title>SHOWTIME</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
@@ -23,28 +24,23 @@
         <form class="buscadorheader" action="searchbar.html" method="get">
           <div class="form-groupSearch">
             <input type="search" class="form-control" name="search" placeholder="  Buscar">
-            <span uk-icon="search"></span>
-            <i id="icono" class="fas fa-search"></i>
                     </div>
         </form>
 
+                    <div class="uk-inline boundary botones">
+                        <button class="uk-button uk-button-default botonlindo" type="button">Menu</button>
+                        <div uk-dropdown="pos: left-top" style="position:fixed;">
+                            <ul class="uk-nav uk-dropdown-nav">
+                              <li class="uk-active miLi"><a href="index.html">Home</a></li>
+                                <li class="uk-active miLi"><a href="buscar.html">Filtros</a></li>
+                                <li class="uk-nav-divider miLi"></li>
+                            </ul>
+                        </div>
+                    </div>
 
+              </ul>
 
-
-            <div class="uk-inline boundary botones ">
-                <button class="uk-button uk-button-default" type="button">Menu</button>
-                <div uk-dropdown="pos: left-top" style="position:fixed;">
-                    <ul class="uk-nav uk-dropdown-nav">
-                      <li class="uk-active miLi"><a href="index.html">Home</a></li>
-                        <li class="uk-active miLi"><a href="buscar.html">Filtros</a></li>
-
-                    </ul>
-                </div>
-            </div>
-
-      </ul>
-
-  		</header>
+              </header>
 <main>
 
 
