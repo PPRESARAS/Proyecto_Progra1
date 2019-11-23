@@ -51,7 +51,7 @@ form.onsubmit = function(validar) {
   return true;
   }
 
-
+form.onsubmit = function(){}
 }
 
 var query = new URLSearchParams(location.search)
